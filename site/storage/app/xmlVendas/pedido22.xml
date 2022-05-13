@@ -1,0 +1,19 @@
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:uPCPedidoIntf-PC_Pedido">
+   <soapenv:Header/>
+   <soapenv:Body>
+       <urn:InserirCabecalhoPedido soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <Numero_Pedido_Ecommerce xsi:type="xsd:double">22</Numero_Pedido_Ecommerce>
+           <Codigo_Filial xsi:type="xsd:string">2</Codigo_Filial>
+           <Codigo_Cliente xsi:type="xsd:int">4501</Codigo_Cliente>
+           <Data xsi:type="xsd:dateTime">2021-06-25</Data>
+           <Observacao1 xsi:type="xsd:string">sem observações</Observacao1>
+           <Observacao2 xsi:type="xsd:string">sem observações</Observacao2>
+           <Valor_Frete xsi:type="xsd:double">0</Valor_Frete>
+           <Numero_Cupom_Desconto xsi:type="xsd:string"></Numero_Cupom_Desconto>
+           <Valor_Desconto_Cupom xsi:type="xsd:double">0</Valor_Desconto_Cupom>
+           <Id_Transacao_TEF xsi:type="xsd:string"></Id_Transacao_TEF>
+           <Codigo_Autorizacao_TEF xsi:type="xsd:string"></Codigo_Autorizacao_TEF>
+           <Codigo_CLiente_Web xsi:type="xsd:int">0</Codigo_CLiente_Web>
+       </urn:InserirCabecalhoPedido>
+   </soapenv:Body>
+</soapenv:Envelope>

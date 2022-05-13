@@ -1,0 +1,19 @@
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:uPCPedidoIntf-PC_Pedido">
+   <soapenv:Header/>
+   <soapenv:Body>
+       <urn:InserirItemPedido soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <Numero_Pedido_Ecommerce xsi:type="xsd:double">23</Numero_Pedido_Ecommerce>
+           <Codigo_Produto xsi:type="xsd:int">141354</Codigo_Produto>
+           <Quantidade xsi:type="xsd:double">9</Quantidade>
+           <Preco_Venda xsi:type="xsd:double">0</Preco_Venda>
+           <Numero_Sequencia xsi:type="xsd:int">1</Numero_Sequencia>
+       </urn:InserirItemPedido>
+       <urn:InserirItemPedido soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <Numero_Pedido_Ecommerce xsi:type="xsd:double">23</Numero_Pedido_Ecommerce>
+           <Codigo_Produto xsi:type="xsd:int">12</Codigo_Produto>
+           <Quantidade xsi:type="xsd:double">3</Quantidade>
+           <Preco_Venda xsi:type="xsd:double">0</Preco_Venda>
+           <Numero_Sequencia xsi:type="xsd:int">1</Numero_Sequencia>
+       </urn:InserirItemPedido>
+   </soapenv:Body>
+</soapenv:Envelope>
