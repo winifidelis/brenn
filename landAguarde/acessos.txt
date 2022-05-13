@@ -11077,3 +11077,28 @@ acesso: 13/05/2022 às 13:04:12 - Sistema Operacional: SO desconhecido - IP: 173
 acesso: 13/05/2022 às 13:17:33 - Sistema Operacional: Android - IP: 191.176.43.232
 acesso: 13/05/2022 às 13:29:42 - Sistema Operacional: iPhone - IP: 191.165.250.74
 acesso: 13/05/2022 às 13:29:48 - Sistema Operacional: Mac OS X - IP: 191.247.148.52
+acesso: 13/05/2022 às 13:43:08 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:42:58 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:45:20 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:45:41 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:46:37 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:46:40 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:46:43 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:46:59 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:47:44 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:48:06 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:48:08 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:49:35 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:50:17 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:55:23 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:56:04 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:56:56 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:56:59 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:57:01 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:57:03 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:57:10 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:57:13 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:57:14 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:57:41 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:58:29 - Sistema Operacional: Windows 10 - IP: ::1
+acesso: 13/05/2022 às 14:58:30 - Sistema Operacional: Windows 10 - IP: ::1

@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>MADARIN TRICOT</title>
+  <title>Brenn Sports</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
   
   <style type="text/css">
     body {
-       background: #DCC3AC; 
+       background: #c9b7c7; 
     }
   </style>
 
@@ -44,11 +44,9 @@
 	  <br />
 	  <br />
 	  <br />
-	  <a href="https://api.whatsapp.com/send?phone=556296509139&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20compras%20no%20atacado."><img src="whatsappAtacado.png"></a>
+	  <a href="https://api.whatsapp.com/send?phone=556299898153&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20roupas%20de%20esporte%20e%20fitness."><img src="whatsappVarejo.png"></a>
 	  <br />
-	  <a href="https://api.whatsapp.com/send?phone=5562999587553&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20compras%20no%20varejo."><img src="whatsappVarejo.png"></a>
-	  <br />
-	  <a href="https://www.instagram.com/madarintricot/"><img src="instagram.png"></a>
+	  <a href="https://www.instagram.com/brenn.sports/"><img src="instagram.png"></a>
 	  <br />
 	  <img src="ecommerce.png">
     </div>
