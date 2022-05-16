@@ -935,9 +935,9 @@ function ecCheckCookie()
     /*
     ver a possibilidade de usar isso aqui como aceitador de cookie
     */
-    setInterval(function () { $(".recent-purchase").stop().slideToggle('slow'); }, 10000);
+    //setInterval(function () { $(".recent-purchase").stop().slideToggle('slow'); }, 10000);
     $(".recent-close").click(function () {
-        //$(".recent-purchase").stop().slideToggle('slow');
+        $(".recent-purchase").stop().slideToggle('slow');
     });
 
     /*----------------------------- All Product Slider -------------------------------- */    

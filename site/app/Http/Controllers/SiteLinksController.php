@@ -15,9 +15,7 @@ class SiteLinksController extends Controller
 {
     public function inicio()
     {
-        dd('start');
-
-        return view('welcome');
+        return view('pages.site.welcome');
     }
 
 
