@@ -17,6 +17,7 @@ class HttpsProtocol
      */
     public function handle(Request $request, Closure $next)
     {
+        
         if (App::environment('local')) {
             return $next($request);
         } else {
