@@ -1,0 +1,25 @@
+Emails
+
+anne@brennsports.com.br
+fran@brennsports.com.br
+silmara@brennsports.com.br
+comercial@brennsports.com.br
+contato@brennsports.com.br
+financeiro@brennsports.com.br
+pablo@brennsports.com.br
+
+Link de acesso:
+https://sh-pro92.hostgator.com.br:2096/webmaillogout.cgi
+
+Senha: pelemelhorquemaradona10
+
+Configurar email para usar em outro email
+
+Configurações com SSL/TLS (Recomendado)
+E-mail/Usuário:	email....@brennsports.com.br
+Senha:	Use a senha da conta de email.
+Servidor de entrada:	mail.brennsports.com.br
+IMAP Port: 993 POP3 Port: 995
+Servidor de saída:	mail.brennsports.com.br
+SMTP Port: 465
+IMAP, POP3 e SMTP requer autenticação.
