@@ -6,7 +6,7 @@
     <div class="ec-menu-inner">
         <div class="ec-menu-content">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="{{route('inicio')}}">Home</a></li>
                 <li><a href="javascript:void(0)">Categories Celular</a>
                     <ul class="sub-menu">
                         <li>

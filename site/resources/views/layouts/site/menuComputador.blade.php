@@ -4,7 +4,7 @@
             <div class="col-md-12 align-self-center">
                 <div class="ec-main-menu">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="{{route('inicio')}}">Home</a></li>
                         <li class="dropdown position-static"><a href="javascript:void(0)">Categories PC</a>
                             <ul class="mega-menu d-block">
                                 <li class="d-flex">

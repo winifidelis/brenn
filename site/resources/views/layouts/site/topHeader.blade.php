@@ -47,9 +47,9 @@
                     <div class="ec-header-user dropdown">
                         <button class="dropdown-toggle" data-bs-toggle="dropdown"><img src="{{asset('assets_html/images/icons/user.svg')}}" class="svg_img header_svg" alt="" /></button>
                         <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a class="dropdown-item" href="register.html">Register</a></li>
+                            <li><a class="dropdown-item" href="{{route('login')}}">Login</a></li>
+                            <li><a class="dropdown-item" href="{{route('register')}}">Registrar</a></li>
                             <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
-                            <li><a class="dropdown-item" href="login.html">Login</a></li>
                         </ul>
                     </div>
                     <a href="wishlist.html" class="ec-header-btn ec-header-wishlist">
@@ -75,7 +75,7 @@
             <div class="ec-flex">
                 <div class="align-self-center">
                     <div class="header-logo">
-                        <a href="index.html"><img src="{{asset('assets_html/images/logo/brenn.png')}}" alt="Site Logo" /><img class="dark-logo" src="{{asset('assets_html/images/logo/dark-logo-8.png')}}" alt="Site Logo" style="display: none;" /></a>
+                        <a href="{{route('inicio')}}"><img src="{{asset('assets_html/images/logo/brenn.png')}}" alt="Site Logo" /></a>
                     </div>
                 </div>
                 <div class="align-self-center">
@@ -91,9 +91,9 @@
                         <div class="ec-header-user dropdown">
                             <button class="dropdown-toggle" data-bs-toggle="dropdown"><img src="{{asset('assets_html/images/icons/user.svg')}}" class="svg_img header_svg" alt="" /></button>
                             <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a class="dropdown-item" href="register.html">Register</a></li>
+                                <li><a class="dropdown-item" href="{{route('login')}}">Login</a></li>
+                                <li><a class="dropdown-item" href="{{route('register')}}">Registrar</a></li>
                                 <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
-                                <li><a class="dropdown-item" href="login.html">Login</a></li>
                             </ul>
                         </div>
                         <a href="wishlist.html" class="ec-header-btn ec-header-wishlist">
@@ -116,7 +116,7 @@
         <div class="row ">
             <div class="col">
                 <div class="header-logo">
-                    <a href="index.html"><img src="{{asset('assets_html/images/logo/brenn.png')}}" alt="Site Logo" /><img class="dark-logo" src="{{asset('assets_html/images/logo/dark-logo-8.png')}}" alt="Site Logo" style="display: none;" /></a>
+                    <a href="{{route('inicio')}}"><img src="{{asset('assets_html/images/logo/brenn.png')}}" alt="Site Logo" /></a>
                 </div>
             </div>
             <div class="col">

@@ -123,21 +123,17 @@ function ecCheckCookie()
 
     /*----------------------------- Site Loader & Popup --------------------*/
     $(window).load(function () { 
-        
         $("#ec-overlay").fadeOut("slow"); 
         setTimeout(function(){ 
             switch(window.location.protocol) {
                 case 'file:':
-
                     //var alertBody = '<div id="ec-direct-run" class="ec-direct-run"><div class="ec-direct-body"><h4>Template Running Directly</h4><p>As we seeing you are try to load template without Local | Live server. it will affect missed or lost content. Please try to use Local | Live Server. </p></div></div>';
                     //$("body").append(alertBody);
-
                   break;
                 default: 
                   //some other protocol
             }
-         }, 3000);    
-         
+         }, 3000);
     });
 
     /*--------------------- Search Bar On Focus -------------------------------- */
