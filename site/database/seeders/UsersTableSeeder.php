@@ -136,6 +136,7 @@ class UsersTableSeeder extends Seeder
             'administrador' => false,
         ]);
 
+        /*
         $departamento = Produtodepartamento::create([
             'descricao' => 'REDE ELÉTRICA',
             'descricaosite' => 'MÉDIA TENSÃO',
@@ -283,5 +284,6 @@ class UsersTableSeeder extends Seeder
             "ativo" => 0,
             "imagem" => "default.jpg",
         ]);
+        */
     }
 }
