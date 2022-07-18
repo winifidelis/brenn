@@ -1,4 +1,4 @@
-@extends('layouts.site.layoutEkka')
+@extends('layouts.site.layoutEkkaPadrao')
 
 @section('content')
 

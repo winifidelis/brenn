@@ -1,4 +1,4 @@
-@extends('layouts.site.layoutEkka')
+@extends('layouts.site.layoutEkkaHome')
 
 @section('content')
 
@@ -312,7 +312,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="ec_ser_content ec_ser_content_5 col-sm-12">
+                    <div class="ec_ser_content ec_ser_content_4 col-sm-12">
                         <div class="ec_ser_inner">
                             <div class="ec-service-image">
                                 <img src="{{asset('assets_html/images/icons/service_4_5.svg')}}" class="svg_img ser_svg" alt="" />

@@ -1,32 +1,39 @@
-@extends('layouts.site.layoutEkka')
+@extends('layouts.site.layoutEkkaPadrao')
 
 @section('content')
 
+
+<!-- Ec breadcrumb start -->
 <div class="sticky-header-next-sec  ec-breadcrumb section-space-mb">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="row ec_breadcrumb_inner">
                     <div class="col-md-6 col-sm-12">
-                        <h2 class="ec-breadcrumb-title">Produto</h2>
+                        <h2 class="ec-breadcrumb-title">Single Products</h2>
                     </div>
                     <div class="col-md-6 col-sm-12">
+                        <!-- ec-breadcrumb-list start -->
                         <ul class="ec-breadcrumb-list">
-                            <li class="ec-breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="ec-breadcrumb-item active">Produto</li>
+                            <li class="ec-breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="ec-breadcrumb-item active">Products</li>
                         </ul>
+                        <!-- ec-breadcrumb-list end -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!-- Ec breadcrumb end -->
 
+<!-- Sart Single product -->
 <section class="ec-page-content section-space-p">
     <div class="container">
         <div class="row">
             <div class="ec-pro-rightside ec-common-rightside col-lg-12 col-md-12">
 
+                <!-- Single product content Start -->
                 <div class="single-pro-block">
                     <div class="single-pro-inner">
                         <div class="row">
@@ -68,7 +75,6 @@
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="single-pro-desc single-pro-desc-no-sidebar">
                                 <div class="single-pro-content">
                                     <h5 class="ec-single-title">Women Leather Heels Sandal</h5>
@@ -164,7 +170,8 @@
                         </div>
                     </div>
                 </div>
-                
+                <!--Single product content End -->
+                <!-- Single product tab start -->
                 <div class="ec-single-pro-tab">
                     <div class="ec-single-pro-tab-wrapper">
                         <div class="ec-single-pro-tab-nav">
@@ -294,14 +301,15 @@
                         </div>
                     </div>
                 </div>
+                <!-- product details description area end -->
             </div>
 
         </div>
     </div>
 </section>
+<!-- End Single product -->
 
-
-
+<!-- Related Product Start -->
 <section class="section ec-releted-product section-space-p">
     <div class="container">
         <div class="row">
@@ -314,6 +322,7 @@
             </div>
         </div>
         <div class="row margin-minus-b-30">
+            <!-- Related Product Content -->
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6 pro-gl-content">
                 <div class="ec-product-inner">
                     <div class="ec-pro-image-outer">
@@ -522,14 +531,7 @@
         </div>
     </div>
 </section>
+<!-- Related Product end -->
 
-
-
-<?php
-//esse include deve sempre ser inserido no final da página
-//é ele que mostra o menu lateral que mostra todos os produtos de uma vez só
-//é o menu que em os 4 quadradinhos
-?>
-@include('layouts.site.menuProdutosDireto')
 
 @endsection
