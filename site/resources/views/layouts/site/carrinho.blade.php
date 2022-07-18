@@ -4,15 +4,15 @@
         <div class="ec-cart-inner">
             <div class="ec-cart-top">
                 <div class="ec-cart-title">
-                    <span class="cart_title">My Cart</span>
+                    <span class="cart_title">Meu carrinho</span>
                     <button class="ec-close">×</button>
                 </div>
                 <ul class="eccart-pro-items">
                     <li>
-                        <a href="product-left-sidebar.html" class="sidecart_pro_img"><img src="{{asset('assets_html/images/product-image/93_1.jpg')}}" alt="product"></a>
+                        <a href="#" class="sidecart_pro_img"><img src="{{asset('assets_html/images/product-image/carrinho_1.jpg')}}" alt="product"></a>
                         <div class="ec-pro-content">
-                            <a href="single-product-left-sidebar.html" class="cart_pro_title">Mens Winter Leathers Jackets</a>
-                            <span class="cart-price"><span>$49.00</span> x 1</span>
+                            <a href="single-#" class="cart_pro_title">Blusa futevôlei Brasil</a>
+                            <span class="cart-price"><span>R$ 110,00<!--</span> x 1</span>!-->
                             <div class="qty-plus-minus">
                                 <input class="qty-input" type="text" name="ec_qtybtn" value="1" />
                             </div>
@@ -20,21 +20,21 @@
                         </div>
                     </li>
                     <li>
-                        <a href="product-left-sidebar.html" class="sidecart_pro_img"><img src="{{asset('assets_html/images/product-image/96_1.jpg')}}" alt="product"></a>
+                        <a href="#" class="sidecart_pro_img"><img src="{{asset('assets_html/images/product-image/carrinho_2.jpg')}}" alt="product"></a>
                         <div class="ec-pro-content">
-                            <a href="product-left-sidebar.html" class="cart_pro_title">Running & Trekking Shoes - White</a>
-                            <span class="cart-price"><span>$150.00</span> x 1</span>
+                            <a href="#" class="cart_pro_title">Camiseta futevôlei</a>
+                            <span class="cart-price"><span>R$ 67,00<!--</span> x 1</span>!-->
                             <div class="qty-plus-minus">
-                                <input class="qty-input" type="text" name="ec_qtybtn" value="1" />
+                                <input class="qty-input" type="text" name="ec_qtybtn" value="3" />
                             </div>
                             <a href="#" class="remove">×</a>
                         </div>
                     </li>
                     <li>
-                        <a href="product-left-sidebar.html" class="sidecart_pro_img"><img src="{{asset('assets_html/images/product-image/111_1.jpg')}}" alt="product"></a>
+                        <a href="#" class="sidecart_pro_img"><img src="{{asset('assets_html/images/product-image/carrinho_3.jpg')}}" alt="product"></a>
                         <div class="ec-pro-content">
-                            <a href="product-left-sidebar.html" class="cart_pro_title">Rose Gold Peacock Earrings</a>
-                            <span class="cart-price"><span>$950.00</span> x 1</span>
+                            <a href="#" class="cart_pro_title">Camiseta campeonato beach tennis</a>
+                            <span class="cart-price"><span>R$ 74,90<!--</span> x 1</span>!-->
                             <div class="qty-plus-minus">
                                 <input class="qty-input" type="text" name="ec_qtybtn" value="1" />
                             </div>
@@ -49,22 +49,22 @@
                         <tbody>
                             <tr>
                                 <td class="text-left">Sub-Total :</td>
-                                <td class="text-right">$300.00</td>
+                                <td class="text-right">R$ 251,90</td>
                             </tr>
                             <tr>
-                                <td class="text-left">VAT (20%) :</td>
-                                <td class="text-right">$60.00</td>
+                                <td class="text-left">CUpom (20%) :</td>
+                                <td class="text-right">R$ 50,38</td>
                             </tr>
                             <tr>
                                 <td class="text-left">Total :</td>
-                                <td class="text-right primary-color">$360.00</td>
+                                <td class="text-right primary-color">R$ 201,52</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="cart_btn">
-                    <a href="cart.html" class="btn btn-primary">View Cart</a>
-                    <a href="checkout.html" class="btn btn-secondary">Checkout</a>
+                    <a href="#" class="btn btn-primary">Ver carrinho</a>
+                    <a href="#" class="btn btn-secondary">Checkout</a>
                 </div>
             </div>
         </div>

@@ -66,42 +66,42 @@
                             <!-- Swiper -->
                             <div class="qty-product-cover">
                                 <div class="qty-slide">
-                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/94_1.jpg')}}" alt="">
+                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/produto_modal_1.jpg')}}" alt="">
                                 </div>
                                 <div class="qty-slide">
-                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/94_2.jpg')}}" alt="">
+                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/produto_modal_2.jpg')}}" alt="">
                                 </div>
                                 <div class="qty-slide">
-                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/93_1.jpg')}}" alt="">
+                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/produto_modal_3.jpg')}}" alt="">
                                 </div>
                                 <div class="qty-slide">
-                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/93_2.jpg')}}" alt="">
+                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/produto_modal_4.jpg')}}" alt="">
                                 </div>
                                 <div class="qty-slide">
-                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/94_2.jpg')}}" alt="">
+                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/produto_modal_5.jpg')}}" alt="">
                                 </div>
                             </div>
                             <div class="qty-nav-thumb">
                                 <div class="qty-slide">
-                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/94_1.jpg')}}" alt="">
+                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/produto_modal_1.jpg')}}" alt="">
                                 </div>
                                 <div class="qty-slide">
-                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/94_2.jpg')}}" alt="">
+                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/produto_modal_2.jpg')}}" alt="">
                                 </div>
                                 <div class="qty-slide">
-                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/93_1.jpg')}}" alt="">
+                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/produto_modal_3.jpg')}}" alt="">
                                 </div>
                                 <div class="qty-slide">
-                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/93_2.jpg')}}" alt="">
+                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/produto_modal_4.jpg')}}" alt="">
                                 </div>
                                 <div class="qty-slide">
-                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/94_2.jpg')}}" alt="">
+                                    <img class="img-responsive" src="{{asset('assets_html/images/product-image/produto_modal_5.jpg')}}" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-7 col-sm-12 col-xs-12">
                             <div class="quickview-pro-content">
-                                <h5 class="ec-quick-title"><a href="product-left-sidebar.html">Mens Winter Leathers Jackets</a></h5>
+                                <h5 class="ec-quick-title"><a href="#">Uniforme Fazenda Ararate</a></h5>
                                 <div class="ec-quickview-rating">
                                     <i class="ecicon eci-star fill"></i>
                                     <i class="ecicon eci-star fill"></i>
@@ -110,23 +110,21 @@
                                     <i class="ecicon eci-star"></i>
                                 </div>
 
-                                <div class="ec-quickview-desc">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                    since the 1500s,</div>
+                                <div class="ec-quickview-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
                                 <div class="ec-quickview-price">
-                                    <span class="new-price">$199.00</span>
-                                    <span class="old-price">$200.00</span>
+                                    <span class="new-price">R$ 120,00</span>
+                                    <span class="old-price">R$ 99,90</span>
                                 </div>
 
                                 <div class="ec-pro-variation">
                                     <div class="ec-pro-variation-inner ec-pro-variation-size">
-                                        <span>Size</span>
+                                        <span>Tamanhos</span>
                                         <div class="ec-pro-variation-content">
                                             <ul>
-                                                <li><span>250 g</span></li>
-                                                <li><span>500 g</span></li>
-                                                <li><span>1 kg</span></li>
-                                                <li><span>2 kg</span></li>
+                                                <li><span>P</span></li>
+                                                <li><span>M</span></li>
+                                                <li><span>G</span></li>
+                                                <li><span>GG</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -136,7 +134,7 @@
                                         <input class="qty-input" type="text" name="ec_qtybtn" value="1" />
                                     </div>
                                     <div class="ec-quickview-cart ">
-                                        <button class="btn btn-primary">Add To Cart</button>
+                                        <button class="btn btn-primary">Adicionar ao carrinho</button>
                                     </div>
                                 </div>
                             </div>
@@ -161,12 +159,15 @@
             </div>
             <div class="col-md-5">
                 <div id="ec-popnews-box-content">
-                    <h2>Subscribe Newsletter.</h2>
-                    <p>Subscribe the ekka ecommerce to get in touch and get the future update. </p>
+                    <h2>Pop-up que pode ser escondido.</h2>
+                    <p>Este pop-up terá uma configuração para aparecer somente quando quiserem. </p>
+                    <p>Mais de um tipo de pop-up poderá ser configurado. </p>
+                    <!--
                     <form id="ec-popnews-form" action="#" method="post">
                         <input type="email" name="newsemail" placeholder="Email Address" required />
                         <button type="button" class="btn btn-primary" name="subscribe">Subscribe</button>
                     </form>
+                    !-->
                 </div>
             </div>
         </div>
@@ -197,10 +198,10 @@
 
     <!-- Add to Cart successfully toast Start -->
     <div id="addtocart_toast" class="addtocart_toast">
-        <div class="desc">You Have Add To Cart Successfully</div>
+        <div class="desc">Produto adicionado ao seu carrinho</div>
     </div>
     <div id="wishlist_toast" class="wishlist_toast">
-        <div class="desc">You Have Add To Wishlist Successfully</div>
+        <div class="desc">Produto adicionado a sua lista de desejos</div>
     </div>
     <!-- Add to Cart successfully toast end -->
 

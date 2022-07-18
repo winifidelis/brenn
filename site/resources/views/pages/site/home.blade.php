@@ -15,8 +15,8 @@
                                     <h2 class="ec-slide-stitle">Teste</h2>
                                     <h1 class="ec-slide-title">Teste de venda</h1>
                                     <div class="ec-slide-desc">
-                                        <p>starting at $ <b>29</b>.99</p>
-                                        <a href="#" class="btn btn-lg btn-primary">Shop Now <i class="ecicon eci-angle-double-right" aria-hidden="true"></i></a>
+                                        <p>a partir de R$ <b>29</b>,99</p>
+                                        <a href="#" class="btn btn-lg btn-primary">Ver mais <i class="ecicon eci-angle-double-right" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -28,11 +28,11 @@
                         <div class="row">
                             <div class="col-sm-12 align-self-center">
                                 <div class="ec-slide-content slider-animation">
-                                    <h2 class="ec-slide-stitle">Trending item</h2>
-                                    <h1 class="ec-slide-title">Women's latest fashion sale</h1>
+                                    <h2 class="ec-slide-stitle">Teste</h2>
+                                    <h1 class="ec-slide-title">Teste de venda</h1>
                                     <div class="ec-slide-desc">
-                                        <p>starting at $ <b>20</b>.00</p>
-                                        <a href="#" class="btn btn-lg btn-primary">Shop Now <i class="ecicon eci-angle-double-right" aria-hidden="true"></i></a>
+                                        <p>a partir de R$ <b>29</b>,99</p>
+                                        <a href="#" class="btn btn-lg btn-primary">Ver mais <i class="ecicon eci-angle-double-right" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -44,11 +44,11 @@
                         <div class="row">
                             <div class="col-sm-12 align-self-center">
                                 <div class="ec-slide-content slider-animation">
-                                    <h2 class="ec-slide-stitle">Trending accessories</h2>
-                                    <h1 class="ec-slide-title">Modern Sunglasses</h1>
+                                    <h2 class="ec-slide-stitle">Teste</h2>
+                                    <h1 class="ec-slide-title">Teste de venda</h1>
                                     <div class="ec-slide-desc">
-                                        <p>starting at $ <b>15</b>.00</p>
-                                        <a href="#" class="btn btn-lg btn-primary">Shop Now <i class="ecicon eci-angle-double-right" aria-hidden="true"></i></a>
+                                        <p>a partir de R$ <b>29</b>,99</p>
+                                        <a href="#" class="btn btn-lg btn-primary">Ver mais <i class="ecicon eci-angle-double-right" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -65,6 +65,7 @@
     </div>
 </div>
 
+<!--
 <section class="section ec-category-section section-space-p">
     <div class="container">
         <div class="row d-none">
@@ -168,6 +169,7 @@
         </div>
     </div>
 </section>
+!-->
 
 @include('layouts.site.menuProdutosDireto')
 
@@ -179,7 +181,7 @@
             <div class="ec-test-section col-lg-3 col-md-6 col-sm-12 col-xs-6 sectopn-spc-mb" data-animation="slideInRight">
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h2 class="ec-title_show">Testimonial</h2>
+                        <h2 class="ec-title_show">Comentários</h2>
                     </div>
                 </div>
                 <div class="ec-test-outer">
@@ -190,13 +192,12 @@
                                     <img alt="testimonial" title="testimonial" src="{{asset('assets_html/images/testimonial/1.jpg')}}" />
                                 </div>
                                 <div class="ec-test-content">
-                                    <div class="ec-test-name">mark jofferson</div>
-                                    <div class="ec-test-designation">- CEO & Founder Invision</div>
+                                    <div class="ec-test-name">João exemplo 1</div>
+                                    <div class="ec-test-designation">Organizados de eventos</div>
                                     <div class="ec-test-divider">
                                         <img src="{{asset('assets_html/images/testimonial/quotes.svg')}}" class="svg_img test_svg" alt="" />
                                     </div>
-                                    <div class="ec-test-desc">Lorem ipsum dolor sit amet consectetur Lorem ipsum
-                                        dolor dolor sit amet.
+                                    <div class="ec-test-desc">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet.
                                     </div>
                                 </div>
                             </div>
@@ -207,13 +208,12 @@
                                     <img alt="testimonial" title="testimonial" src="{{asset('assets_html/images/testimonial/2.jpg')}}" />
                                 </div>
                                 <div class="ec-test-content">
-                                    <div class="ec-test-name">mark jofferson</div>
-                                    <div class="ec-test-designation">- CEO & Founder Invision</div>
+                                    <div class="ec-test-name">João exemplo 2</div>
+                                    <div class="ec-test-designation">Proprietário Arena X</div>
                                     <div class="ec-test-divider">
                                         <img src="{{asset('assets_html/images/testimonial/quotes.svg')}}" class="svg_img test_svg" alt="" />
                                     </div>
-                                    <div class="ec-test-desc">Lorem ipsum dolor sit amet consectetur Lorem ipsum
-                                        dolor dolor sit amet.
+                                    <div class="ec-test-desc">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet.
                                     </div>
                                 </div>
                             </div>
@@ -224,13 +224,12 @@
                                     <img alt="testimonial" title="testimonial" src="{{asset('assets_html/images/testimonial/3.jpg')}}" />
                                 </div>
                                 <div class="ec-test-content">
-                                    <div class="ec-test-name">mark jofferson</div>
-                                    <div class="ec-test-designation">- CEO & Founder Invision</div>
+                                    <div class="ec-test-name">João exemplo 3</div>
+                                    <div class="ec-test-designation">Fundador de campeonatos</div>
                                     <div class="ec-test-divider">
                                         <img src="{{asset('assets_html/images/testimonial/quotes.svg')}}" class="svg_img test_svg" alt="" />
                                     </div>
-                                    <div class="ec-test-desc">Lorem ipsum dolor sit amet consectetur Lorem ipsum
-                                        dolor dolor sit amet.
+                                    <div class="ec-test-desc">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet.
                                     </div>
                                 </div>
                             </div>
@@ -240,17 +239,21 @@
             </div>
 
 
+            <!-- imagem em imagens/banner/23.jpg!-->
+            <!-- modificar css!-->
             <div class="col-md-6 col-sm-12" data-animation="fadeIn">
                 <div class="ec-banner-inner">
                     <div class="ec-banner-block ec-banner-block-1">
                         <div class="banner-block">
                             <div class="banner-content">
                                 <div class="banner-text">
-                                    <span class="ec-banner-disc">25% discount</span>
-                                    <span class="ec-banner-title">Vegetables & Fruits</span>
-                                    <span class="ec-banner-stitle">Starting @ $10</span>
+                                    <!--<span class="ec-banner-disc">25% discount</span>!-->
+                                    <span class="ec-banner-title">
+                                        <center>A Brenn este no Torneio Praia do Cerrado</center>
+                                    </span>
+                                    <!--<span class="ec-banner-stitle">Starting @ $10</span>!-->
                                 </div>
-                                <span class="ec-banner-btn"><a href="shop-left-sidebar-col-3.html">Shop Now <i class="ecicon eci-angle-double-right" aria-hidden="true"></i></a></span>
+                                <span class="ec-banner-btn"><a href="#">Veja como foi <i class="ecicon eci-angle-double-right" aria-hidden="true"></i></a></span>
                             </div>
                         </div>
                     </div>
@@ -261,7 +264,7 @@
             <div class="ec-services-section col-lg-3 col-md-3 col-sm-3" data-animation="slideInLeft">
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h2 class="ec-title_show">Our Services</h2>
+                        <h2 class="ec-title_show">Nossos serviços</h2>
                     </div>
                 </div>
                 <div class="ec_ser_block">
@@ -271,8 +274,8 @@
                                 <img src="{{asset('assets_html/images/icons/service_4_1.svg')}}" class="svg_img ser_svg" alt="" />
                             </div>
                             <div class="ec-service-desc">
-                                <h2>Worldwide Delivery</h2>
-                                <p>For Order Over $100</p>
+                                <h2>Entrega</h2>
+                                <p>Acima de R$ 100,00</p>
                             </div>
                         </div>
                     </div>
@@ -282,8 +285,8 @@
                                 <img src="{{asset('assets_html/images/icons/service_4_2.svg')}}" class="svg_img ser_svg" alt="" />
                             </div>
                             <div class="ec-service-desc">
-                                <h2>Next Day delivery</h2>
-                                <p>UK Orders Only</p>
+                                <h2>Entregas rápida</h2>
+                                <p>Para goiânia</p>
                             </div>
                         </div>
                     </div>
@@ -293,8 +296,8 @@
                                 <img src="{{asset('assets_html/images/icons/service_4_3.svg')}}" class="svg_img ser_svg" alt="" />
                             </div>
                             <div class="ec-service-desc">
-                                <h2>Best Online Support</h2>
-                                <p>Hours: 8AM -11PM</p>
+                                <h2>Suporte online</h2>
+                                <p>Das 08:00 as 17:00</p>
                             </div>
                         </div>
                     </div>
@@ -304,8 +307,8 @@
                                 <img src="{{asset('assets_html/images/icons/service_4_4.svg')}}" class="svg_img ser_svg" alt="" />
                             </div>
                             <div class="ec-service-desc">
-                                <h2>Return Policy</h2>
-                                <p>Easy & Free Return</p>
+                                <h2>Política de devolução</h2>
+                                <p>Simples e sem custos</p>
                             </div>
                         </div>
                     </div>
@@ -315,8 +318,8 @@
                                 <img src="{{asset('assets_html/images/icons/service_4_5.svg')}}" class="svg_img ser_svg" alt="" />
                             </div>
                             <div class="ec-service-desc">
-                                <h2>30% money back</h2>
-                                <p>For Order Over $100</p>
+                                <h2>Desconto</h2>
+                                <p>Cupons de descontos dos atletas</p>
                             </div>
                         </div>
                     </div>
@@ -334,90 +337,84 @@
                 <div class="ec-blog-block">
                     <div class="ec-blog-inner">
                         <div class="ec-blog-image">
-                            <a href="blog-detail-left-sidebar.html">
-                                <img class="blog-image" src="{{asset('assets_html/images/blog-image/2.jpg')}}" alt="Blog" />
+                            <a href="#">
+                                <img class="blog-image" src="{{asset('assets_html/images/atletas/1.jpg')}}" alt="Blog" />
                             </a>
                         </div>
                         <div class="ec-blog-content">
-                            <div class="ec-blog-cat"><a href="blog-left-sidebar.html">Clothes</a></div>
-                            <h5 class="ec-blog-title"><a href="blog-detail-left-sidebar.html">Curbside fashion Trends: How to Win the Pickup Battle.</a></h5>
-
-                            <div class="ec-blog-date">By<span>Mr Robin</span> / Jan 18, 2022</div>
+                            <div class="ec-blog-cat"><a href="#">Thayrone</a></div>
+                            <h5 class="ec-blog-title"><a href="#">Linha do atleta.</a></h5>
+                            <div class="ec-blog-date">Jogador de futevolei</div>
                         </div>
                     </div>
                 </div>
                 <div class="ec-blog-block">
                     <div class="ec-blog-inner">
                         <div class="ec-blog-image">
-                            <a href="blog-detail-left-sidebar.html">
-                                <img class="blog-image" src="{{asset('assets_html/images/blog-image/3.jpg')}}" alt="Blog" />
+                            <a href="#">
+                                <img class="blog-image" src="{{asset('assets_html/images/atletas/2.jpg')}}" alt="Blog" />
                             </a>
                         </div>
                         <div class="ec-blog-content">
-                            <div class="ec-blog-cat"><a href="blog-left-sidebar.html">Fashion</a></div>
-                            <h5 class="ec-blog-title"><a href="blog-detail-left-sidebar.html">Clothes Retail KPIs 2021 Guide for Clothes Executives.</a></h5>
-
-                            <div class="ec-blog-date">By<span>Mr Admin</span> / Apr 06, 2022</div>
+                            <div class="ec-blog-cat"><a href="#">Lana</a></div>
+                            <h5 class="ec-blog-title"><a href="#">Linha do atleta.</a></h5>
+                            <div class="ec-blog-date">Jogador de futevolei</div>
                         </div>
                     </div>
                 </div>
                 <div class="ec-blog-block">
                     <div class="ec-blog-inner">
                         <div class="ec-blog-image">
-                            <a href="blog-detail-left-sidebar.html">
-                                <img class="blog-image" src="{{asset('assets_html/images/blog-image/4.jpg')}}" alt="Blog" />
+                            <a href="#">
+                                <img class="blog-image" src="{{asset('assets_html/images/atletas/3.jpg')}}" alt="Blog" />
                             </a>
                         </div>
                         <div class="ec-blog-content">
-                            <div class="ec-blog-cat"><a href="blog-left-sidebar.html">Shoes</a></div>
-                            <h5 class="ec-blog-title"><a href="blog-detail-left-sidebar.html">EBT vendors: Claim Your Share of SNAP Online Revenue.</a></h5>
-
-                            <div class="ec-blog-date">By<span>Mr Selsa</span> / Feb 10, 2022</div>
+                            <div class="ec-blog-cat"><a href="#">Mary Fidelis</a></div>
+                            <h5 class="ec-blog-title"><a href="#">Linha do atleta.</a></h5>
+                            <div class="ec-blog-date">Jogador de futevolei</div>
                         </div>
                     </div>
                 </div>
                 <div class="ec-blog-block">
                     <div class="ec-blog-inner">
                         <div class="ec-blog-image">
-                            <a href="blog-detail-left-sidebar.html">
-                                <img class="blog-image" src="{{asset('assets_html/images/blog-image/5.jpg')}}" alt="Blog" />
+                            <a href="#">
+                                <img class="blog-image" src="{{asset('assets_html/images/atletas/4.jpg')}}" alt="Blog" />
                             </a>
                         </div>
                         <div class="ec-blog-content">
-                            <div class="ec-blog-cat"><a href="blog-left-sidebar.html">Electronics</a></div>
-                            <h5 class="ec-blog-title"><a href="blog-detail-left-sidebar.html">Curbside fashion Trends: How to Win the Pickup Battle.</a></h5>
-
-                            <div class="ec-blog-date">By<span>Mr Pawar</span> / Mar 15, 2022</div>
+                            <div class="ec-blog-cat"><a href="#">Thallis</a></div>
+                            <h5 class="ec-blog-title"><a href="#">Linha do atleta.</a></h5>
+                            <div class="ec-blog-date">Jogador de futevolei</div>
                         </div>
                     </div>
                 </div>
                 <div class="ec-blog-block">
                     <div class="ec-blog-inner">
                         <div class="ec-blog-image">
-                            <a href="blog-detail-left-sidebar.html">
-                                <img class="blog-image" src="{{asset('assets_html/images/blog-image/6.jpg')}}" alt="Blog" />
+                            <a href="#">
+                                <img class="blog-image" src="{{asset('assets_html/images/atletas/5.jpg')}}" alt="Blog" />
                             </a>
                         </div>
                         <div class="ec-blog-content">
-                            <div class="ec-blog-cat"><a href="blog-left-sidebar.html">Glasses</a></div>
-                            <h5 class="ec-blog-title"><a href="blog-detail-left-sidebar.html">6 fashion Retail Industry Digital Strategies for 2021.</a></h5>
-
-                            <div class="ec-blog-date">By<span>Mr Natly</span> / Jun 02, 2022</div>
+                            <div class="ec-blog-cat"><a href="#">Sergio</a></div>
+                            <h5 class="ec-blog-title"><a href="#">Linha do atleta.</a></h5>
+                            <div class="ec-blog-date">Jogador de futevolei</div>
                         </div>
                     </div>
                 </div>
                 <div class="ec-blog-block">
                     <div class="ec-blog-inner">
                         <div class="ec-blog-image">
-                            <a href="blog-detail-left-sidebar.html">
-                                <img class="blog-image" src="{{asset('assets_html/images/blog-image/7.jpg')}}" alt="Blog" />
+                            <a href="#">
+                                <img class="blog-image" src="{{asset('assets_html/images/atletas/6.jpg')}}" alt="Blog" />
                             </a>
                         </div>
                         <div class="ec-blog-content">
-                            <div class="ec-blog-cat"><a href="blog-left-sidebar.html">Jewellery</a></div>
-                            <h5 class="ec-blog-title"><a href="blog-detail-left-sidebar.html">Why Should be Concerned About Instacart Patents.</a></h5>
-
-                            <div class="ec-blog-date">By<span>Mr Admin</span> / Feb 10, 2022</div>
+                            <div class="ec-blog-cat"><a href="#">Lana</a></div>
+                            <h5 class="ec-blog-title"><a href="#">Linha do atleta.</a></h5>
+                            <div class="ec-blog-date">Jogador de futevolei</div>
                         </div>
                     </div>
                 </div>

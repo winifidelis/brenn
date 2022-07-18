@@ -31,7 +31,7 @@
         <div class="section-title">
           <h2 class="ec-bg-title">Register</h2>
           <h2 class="ec-title">Register</h2>
-          <p class="sub-title mb-3">Best place to buy and sell digital products</p>
+          <p class="sub-title mb-3">Vista Brenn</p>
         </div>
       </div>
       <div class="ec-register-wrapper">

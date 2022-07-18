@@ -26,6 +26,7 @@ DELETE	    /artigos/{photo}	      destroy	admin.destroy
 
 
 Route::get('/', [App\Http\Controllers\SiteLinksController::class, 'inicio'])->name('inicio');
+Route::get('/produto', [App\Http\Controllers\SiteLinksController::class, 'produto'])->name('produto');
 //Route::get('/inicio', [App\Http\Controllers\SiteLinksController::class, 'inicio'])->name('inicio');
 //Route::get('/inicio', [App\Http\Controllers\SiteLinksController::class, 'inicio'])->name('inicio');
 

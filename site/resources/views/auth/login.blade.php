@@ -12,7 +12,7 @@
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <ul class="ec-breadcrumb-list">
-                            <li class="ec-breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="ec-breadcrumb-item"><a href="#">Home</a></li>
                             <li class="ec-breadcrumb-item active">Login</li>
                         </ul>
                     </div>
@@ -29,7 +29,7 @@
                 <div class="section-title">
                     <h2 class="ec-bg-title">Log In</h2>
                     <h2 class="ec-title">Log In</h2>
-                    <p class="sub-title mb-3">Best place to buy and sell digital products</p>
+                    <p class="sub-title mb-3">Vista Brenn</p>
                 </div>
             </div>
             <div class="ec-login-wrapper">

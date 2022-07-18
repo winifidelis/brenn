@@ -18,6 +18,11 @@ class SiteLinksController extends Controller
         return view('pages.site.home');
     }
 
+    public function produto()
+    {
+        return view('pages.site.produto');
+    }
+
 
     /**
      * Display a listing of the resource.

@@ -8,7 +8,7 @@
                         <li class="list-inline-item"><a class="hdr-facebook" href="#"><i class="ecicon eci-facebook"></i></a></li>
                         <li class="list-inline-item"><a class="hdr-twitter" href="#"><i class="ecicon eci-twitter"></i></a></li>
                         <li class="list-inline-item"><a class="hdr-instagram" href="#"><i class="ecicon eci-instagram"></i></a></li>
-                        <li class="list-inline-item"><a class="hdr-linkedin" href="#"><i class="ecicon eci-linkedin"></i></a></li>
+                        <!--<li class="list-inline-item"><a class="hdr-linkedin" href="#"><i class="ecicon eci-linkedin"></i></a></li>!-->
                     </ul>
                 </div>
             </div>
@@ -49,13 +49,15 @@
                         <ul class="dropdown-menu dropdown-menu-right">
                             <li><a class="dropdown-item" href="{{route('login')}}">Login</a></li>
                             <li><a class="dropdown-item" href="{{route('register')}}">Registrar</a></li>
-                            <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                            <li><a class="dropdown-item" href="#">Checkout</a></li>
                         </ul>
                     </div>
+                    <!--
                     <a href="wishlist.html" class="ec-header-btn ec-header-wishlist">
                         <div class="header-icon"><img src="{{asset('assets_html/images/icons/wishlist.svg')}}" class="svg_img header_svg" alt="" /></div>
                         <span class="ec-header-count">4</span>
                     </a>
+                    !-->
                     <a href="#ec-side-cart" class="ec-header-btn ec-side-toggle">
                         <div class="header-icon"><img src="{{asset('assets_html/images/icons/cart.svg')}}" class="svg_img header_svg" alt="" /></div>
                         <span class="ec-header-count ec-cart-count cart-count-lable">3</span>
@@ -96,10 +98,12 @@
                                 <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
                             </ul>
                         </div>
+                        <!--
                         <a href="wishlist.html" class="ec-header-btn ec-header-wishlist">
                             <div class="header-icon"><img src="{{asset('assets_html/images/icons/wishlist.svg')}}" class="svg_img header_svg" alt="" /></div>
                             <span class="ec-header-count">4</span>
                         </a>
+                        !-->
                         <a href="#ec-side-cart" class="ec-header-btn ec-side-toggle">
                             <div class="header-icon"><img src="{{asset('assets_html/images/icons/cart.svg')}}" class="svg_img header_svg" alt="" /></div>
                             <span class="ec-header-count ec-cart-count cart-count-lable">3</span>
