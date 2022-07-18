@@ -38,18 +38,18 @@
                         <form action="#" method="post">
                             <span class="ec-login-wrap">
                                 <label>Email Address*</label>
-                                <input type="text" name="name" placeholder="Enter your email add..." required />
+                                <input type="text" name="name" placeholder="Digite seu email" required />
                             </span>
                             <span class="ec-login-wrap">
                                 <label>Password*</label>
-                                <input type="password" name="password" placeholder="Enter your password" required />
+                                <input type="password" name="password" placeholder="Digite sua senha" required />
                             </span>
                             <span class="ec-login-wrap ec-login-fp">
-                                <label><a href="#">Forgot Password?</a></label>
+                                <label><a href="#">Perdeu a senha?</a></label>
                             </span>
                             <span class="ec-login-wrap ec-login-btn">
                                 <button class="btn btn-primary" type="submit">Login</button>
-                                <a href="register.html" class="btn btn-secondary">Register</a>
+                                <a href="{{route('register')}}" class="btn btn-secondary">Cadastrar</a>
                             </span>
                         </form>
                     </div>

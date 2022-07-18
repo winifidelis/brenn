@@ -72,12 +72,10 @@
                         !-->
                         <li class="dropdown"><a href="javascript:void(0)">Produtos</a>
                             <ul class="sub-menu">
-                                <li class="dropdown position-static"><a href="javascript:void(0)">Futevôlei
-                                        <i class="ecicon eci-angle-right"></i></a>
+                                <li class="dropdown position-static"><a href="javascript:void(0)">Futevôlei<i class="ecicon eci-angle-right"></i></a>
                                     <ul class="sub-menu sub-menu-child">
                                         <li><a href="#">Feminino</a></li>
                                         <li><a href="#">Masculino</a></li>
-                                        <li><a href="#">Atletas</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">Beach tennis</a></li>
@@ -85,18 +83,43 @@
                                 <li><a href="#">Fitness</a></li>
                                 <li><a href="#">Empresarial</a></li>
                                 <li><a href="#">Resenha</a></li>
-                                <li><a href="#">Atletica</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="javascript:void(0)">Linhas</a>
+                        <li class="dropdown"><a href="javascript:void(0)">Atletas</a>
                             <ul class="sub-menu">
-                                <li><a href="#">Thayrone</a></li>
-                                <li><a href="#">Sergio</a></li>
-                                <li><a href="#">Thallis</a></li>
-                                <li><a href="#">Alan</a></li>
-                                <li><a href="#">Lane</a></li>
-                                <li><a href="#">Lana</a></li>
-                                <li><a href="#">Mary Fidelis</a></li>
+                                <li class="dropdown position-static"><a href="javascript:void(0)">Futevôlei<i class="ecicon eci-angle-right"></i></a>
+                                    <ul class="sub-menu sub-menu-child">
+                                        <li><a href="#">Thayrone</a></li>
+                                        <li><a href="#">Sergio</a></li>
+                                        <li><a href="#">Thallis</a></li>
+                                        <li><a href="#">Alan</a></li>
+                                        <li><a href="#">Lane</a></li>
+                                        <li><a href="#">Lana</a></li>
+                                        <li><a href="#">Mary Fidelis</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown position-static"><a href="javascript:void(0)">Vôlei<i class="ecicon eci-angle-right"></i></a>
+                                    <ul class="sub-menu sub-menu-child">
+                                        <li><a href="#">João</a></li>
+                                        <li><a href="#">José</a></li>
+                                        <li><a href="#">Ricardo</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown position-static"><a href="javascript:void(0)">Futebol<i class="ecicon eci-angle-right"></i></a>
+                                    <ul class="sub-menu sub-menu-child">
+                                        <li><a href="#">Pablito</a></li>
+                                        <li><a href="#">Anne</a></li>
+                                        <li><a href="#">Frã</a></li>
+                                        <li><a href="#">Sil</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown position-static"><a href="javascript:void(0)">Natação<i class="ecicon eci-angle-right"></i></a>
+                                    <ul class="sub-menu sub-menu-child">
+                                        <li><a href="#">Tubarão</a></li>
+                                        <li><a href="#">Baiacu</a></li>
+                                        <li><a href="#">Barracuda</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         <li><a href="#">Orçamento online</a></li>

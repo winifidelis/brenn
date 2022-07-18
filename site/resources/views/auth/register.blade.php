@@ -39,27 +39,23 @@
           <div class="ec-register-form">
             <form action="#" method="post">
               <span class="ec-register-wrap ec-register-half">
-                <label>First Name*</label>
-                <input type="text" name="firstname" placeholder="Enter your first name" required />
+                <label>Nome</label>
+                <input type="text" name="firstname" placeholder="Digite seu nome" required />
               </span>
               <span class="ec-register-wrap ec-register-half">
-                <label>Last Name*</label>
-                <input type="text" name="lastname" placeholder="Enter your last name" required />
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Digiter seu email" required />
               </span>
               <span class="ec-register-wrap ec-register-half">
-                <label>Email*</label>
-                <input type="email" name="email" placeholder="Enter your email add..." required />
-              </span>
-              <span class="ec-register-wrap ec-register-half">
-                <label>Phone Number*</label>
-                <input type="text" name="phonenumber" placeholder="Enter your phone number" required />
+                <label>Telefone</label>
+                <input type="text" name="phonenumber" placeholder="Digite seu telefone (whatsapp)" required />
               </span>
               <span class="ec-register-wrap">
-                <label>Address</label>
-                <input type="text" name="address" placeholder="Address Line 1" />
+                <label>Endereço</label>
+                <input type="text" name="address" placeholder="Digite seu endereço" />
               </span>
               <span class="ec-register-wrap ec-register-half">
-                <label>City *</label>
+                <label>Estado</label>
                 <span class="ec-rg-select-inner">
                   <select name="ec_select_city" id="ec-select-city" class="ec-register-select">
                     <option selected disabled>City</option>
