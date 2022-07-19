@@ -51,6 +51,8 @@ $(document).ready(function(){
 
         //Open panel and rotate icon
         openPanel = function(e) {
+          window.open("https://api.whatsapp.com/send?phone=5562992869312&text=Ol%C3%A1!%20quero%20saber%20mais%20sobre%20seus%20produtos","_blank")
+          /*
           if (clicks === 0) {
             if (settings.rotate) {
               $(this).removeClass('rotateBackward').toggleClass('rotateForward');
@@ -70,6 +72,7 @@ $(document).ready(function(){
 
           e.preventDefault();
           return false;
+          */
       };
 
       //Allow clicking in panel

@@ -53,7 +53,7 @@
 
     @yield('content')
 
-    @include('layouts.site.footer')
+    @include('layouts.site.footerHome')
 
     <!-- Modal -->
     <div class="modal fade" id="ec_quickview_modal" tabindex="-1" role="dialog">
@@ -146,7 +146,13 @@
     </div>
     <!-- Modal end -->
 
-    @include('layouts.site.popWhatsApp')
+    <div class="ec-cc-style cc-right-bottom">
+        <div class="cc-button cc-right-bottom">
+            <!-- public\assets_html\js\plugins\click-to-call.js !-->
+            <!-- linha 54 !-->
+            <img src="{{asset('assets_html/images/icons/call.svg')}}" class="svg_img cc-call-svg" alt="call image" />
+        </div>
+    </div>
 
 
     <!-- Newsletter Modal Start -->
@@ -174,7 +180,7 @@
     </div>
     <!-- Newsletter Modal end -->
 
-    @include('layouts.site.menuBarFooter')
+    @include('layouts.site.menuBarFooterHome')
 
     <!-- Usar isso aqui como aceitador de cookie  -->
     <!--

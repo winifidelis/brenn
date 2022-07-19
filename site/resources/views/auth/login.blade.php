@@ -59,11 +59,4 @@
     </div>
 </section>
 
-<?php
-//esse include deve sempre ser inserido no final da página
-//é ele que mostra o menu lateral que mostra todos os produtos de uma vez só
-//é o menu que em os 4 quadradinhos
-?>
-@include('layouts.site.menuProdutosDireto')
-
 @endsection

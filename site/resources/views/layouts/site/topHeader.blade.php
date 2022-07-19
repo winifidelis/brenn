@@ -12,9 +12,12 @@
                     </ul>
                 </div>
             </div>
+            @if (request()->route()->getName() == 'inicio')
             <a href="#ec-mobile-sidebar" class="ec-header-btn ec-sidebar-toggle d-lg-none">
                 <img src="{{asset('assets_html/images/icons/category-icon.svg')}}" class="svg_img header_svg" alt="icon" />
             </a>
+            @endif
+
             <!--
             <div class="col text-center header-top-center">
                 <div class="header-top-message text-upper">
