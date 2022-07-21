@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="{{asset('assets_html/css/plugins/slick.min.css')}}" />
     <link rel="stylesheet" href="{{asset('assets_html/css/plugins/nouislider.css')}}" />
     <link rel="stylesheet" href="{{asset('assets_html/css/plugins/bootstrap.css')}}" />
-    
+
 
     <link rel="stylesheet" href="{{asset('assets_html/css/style.css')}}" />
     <link rel="stylesheet" href="{{asset('assets_html/css/skin-05.css')}}" />
@@ -34,7 +34,15 @@
 
 </head>
 
-<body class="product_page">
+<?php
+//Definindo as classes da página baseado nas rotas
+$classeCSS = "product_page";
+if (request()->route()->getName() == "register") {
+    $classeCSS = "blog_page checkout_page";
+}
+?>
+
+<body class="{{$classeCSS}}">
     <div id="ec-overlay"><span class="loader_img"></span></div>
 
     <header class="ec-header">
@@ -173,7 +181,7 @@
             </div>
         </div>
     </div>
-    
+
 
 
 
