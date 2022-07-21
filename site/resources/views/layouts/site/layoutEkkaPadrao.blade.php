@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="{{asset('assets_html/css/plugins/slick.min.css')}}" />
     <link rel="stylesheet" href="{{asset('assets_html/css/plugins/nouislider.css')}}" />
     <link rel="stylesheet" href="{{asset('assets_html/css/plugins/bootstrap.css')}}" />
+    
 
     <link rel="stylesheet" href="{{asset('assets_html/css/style.css')}}" />
     <link rel="stylesheet" href="{{asset('assets_html/css/skin-05.css')}}" />
@@ -202,6 +203,8 @@
     </script>
     <script src="{{asset('assets_html/js/vendor/index.js')}}"></script>
     <script src="{{asset('assets_html/js/main.js')}}"></script>
+
+    <script src="{{asset('assets_html/util.js')}}"></script>
 
 </body>
 

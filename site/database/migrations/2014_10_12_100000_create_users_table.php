@@ -50,6 +50,9 @@ class CreateUsersTable extends Migration
             $table->boolean('nomesdepartamentos')->default(false);
             $table->boolean('administrador')->default(false);
 
+            //$table->unsignedBigInteger('user_id');
+            //$table->foreign('user_id')->references('id')->on('users');
+
 
             $table->rememberToken();
             $table->timestamps();

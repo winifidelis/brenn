@@ -234,6 +234,9 @@
     <!-- Main Js -->
     <script src="{{asset('assets_html/js/vendor/index.js')}}"></script>
     <script src="{{asset('assets_html/js/brenn.js')}}"></script>
+
+    <script src="{{asset('assets_html/util.js')}}"></script>
+    
 </body>
 
 </html>
