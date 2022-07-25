@@ -27,7 +27,7 @@ DELETE	    /artigos/{photo}	      destroy	admin.destroy
 
 Route::get('/', [App\Http\Controllers\SiteLinksController::class, 'inicio'])->name('inicio');
 Route::get('/produto', [App\Http\Controllers\SiteLinksController::class, 'produto'])->name('produto');
-//Route::get('/inicio', [App\Http\Controllers\SiteLinksController::class, 'inicio'])->name('inicio');
+Route::get('/inicio', [App\Http\Controllers\SiteLinksController::class, 'inicio'])->name('inicio');
 //Route::get('/inicio', [App\Http\Controllers\SiteLinksController::class, 'inicio'])->name('inicio');
 
 //Route::get('/quemsomos', [App\Http\Controllers\SiteLinksController::class, 'quemsomos'])->name('quemsomos');
@@ -70,6 +70,9 @@ Route::get('/produto', [App\Http\Controllers\SiteLinksController::class, 'produt
 Auth::routes();
 
 Route::middleware(['auth'])->group(function () {
+
+
+    Route::get('dash.inicio', [App\Http\Controllers\DashController::class, 'inicio'])->name('dash.inicio');
 
     //Route::get('user.dashuser', [App\Http\Controllers\SiteLinksController::class, 'dashuser'])->name('user.dashuser');
     //Route::get('user.dashuserpedidos', [App\Http\Controllers\SiteLinksController::class, 'dashuserpedidos'])->name('user.dashuserpedidos');

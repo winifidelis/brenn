@@ -37,7 +37,7 @@
     carregador do site
     !-->
     <div id="ec-overlay"><span class="loader_img"></span></div>
-
+    
     <header class="ec-header">
 
         @include('layouts.site.topHeader')

@@ -63,10 +63,9 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-
             'cpf' => ['required', 'string', 'max:14', 'unique:users', 'cpf'],
             'cnpj' => ['required', 'string', 'max:18', 'unique:users', 'cnpj'],
-            'whatsapp' => ['required', 'string', 'max:15', 'unique:users', 'celular_com_ddd'],
+            //'whatsapp' => ['required', 'string', 'max:15', 'unique:users', 'celular_com_ddd'],
             'checkboxregulamento' => ['accepted'],
         ], [
             'required' => 'O campo :attribute é obrigatório.',
@@ -109,6 +108,10 @@ class RegisterController extends Controller
             $data['checkboxregulamento'] = 0;
         }
         
+        //dd($data);
+        if(!isset($data['estado'])){
+            $data['estado'] = null;
+        }
         $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],

@@ -38,26 +38,17 @@
         <div class="ec-register-container">
           <div class="ec-register-form">
 
-            <div class="alert alert-danger" role="alert">
-              <h4 class="alert-heading">Erro ao cadastrar</h4>
-              <li>teste</li>
-              <li>teste</li>
-              <li>teste</li>
-            </div>
-
+            <!-- https://www.flextool.com.br/tabela_cores.html !-->
             @if($errors->all())
-            <div class="alert alert-danger alert-intro" role="alert">
-              <h4 class="alert-heading">Erro ao cadastrar</h4>
-              @foreach($errors->all() as $erro => $value)
-              <li>{{$value}}</li>
-              @endforeach
+            <div class="alert alert-danger alert-intro" style="background-color: #F08080">
+              <h4 class="alert-heading" style="color:white">Erro ao cadastrar</h4>
+              <ul class="ec-check-list">
+                @foreach($errors->all() as $erro => $value)
+                <li style="color:white"><i class="ecicon eci-exclamation-circle"></i>&nbsp;{{$value}}</li>
+                @endforeach
+              </ul>
             </div>
             @endif
-
-
-
-
-
 
             <form method="POST" action="{{ route('register') }}">
               @csrf
@@ -225,7 +216,7 @@
                     <label>Estado</label>
                     <span class="ec-rg-select-inner">
                       <select name="estado" id="estado" class="ec-register-select">
-                        <option selected disabled>Selecione o estado</option>
+                        <option value=""selected disabled>Selecione o estado</option>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
                         <option value="AP">Amapá</option>

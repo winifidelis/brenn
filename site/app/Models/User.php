@@ -7,10 +7,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use App\Notifications\meuResetDeSenha;
+use App\Traits\FormatsNumber;
+use App\Traits\MaskNumber;
 
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;
+    use FormatsNumber;
+    use MaskNumber;
 
     /**
      * The attributes that are mass assignable.
@@ -43,12 +47,7 @@ class User extends Authenticatable
 
         'programador',
         'telabackend',
-        'enviarxml',
-        'enviarimagens',
-        'popupprincipal',
-        'promocoes',
         'sliderprincipal',
-        'userdashboard',
         'administrador',
     ];
 
@@ -79,5 +78,29 @@ class User extends Authenticatable
     public function vendas()
     {
         return $this->hasMany(Venda::class);
+    }
+
+    public function getCpfAttribute()
+    {
+        return $this->toMask($this->attributes['cpf'], '###.###.###-##', '');
+    }
+
+    public function setCpfAttribute($value)
+    {
+        if ($value) {
+            $this->attributes['cpf'] = $this->fromMask($value);
+        }
+    }
+
+    public function getCnpjAttribute()
+    {
+        return $this->toMask($this->attributes['cnpj'], '##.###.###/####-##', '');
+    }
+
+    public function setCnpjAttribute($value)
+    {
+        if ($value) {
+            $this->attributes['cnpj'] = $this->fromMask($value);
+        }
     }
 }

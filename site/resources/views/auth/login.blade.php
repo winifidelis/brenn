@@ -35,13 +35,26 @@
             <div class="ec-login-wrapper">
                 <div class="ec-login-container">
                     <div class="ec-login-form">
-                        <form action="#" method="post">
+                        <!-- https://www.flextool.com.br/tabela_cores.html !-->
+                        @if($errors->all())
+                        <div class="alert alert-danger alert-intro" style="background-color: #F08080">
+                            <h4 class="alert-heading" style="color:white">Erro ao efetuar login</h4>
+                            <ul class="ec-check-list">
+                                @foreach($errors->all() as $erro => $value)
+                                <li style="color:white"><i class="ecicon eci-exclamation-circle"></i>&nbsp;{{$value}}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endif
+                        <form method="POST" action="{{ route('login') }}">
+                            @captcha
+                            @csrf
                             <span class="ec-login-wrap">
-                                <label>Email Address*</label>
-                                <input type="text" name="name" placeholder="Digite seu email" required />
+                                <label>Email</label>
+                                <input type="text" name="email" placeholder="Digite seu email" required />
                             </span>
                             <span class="ec-login-wrap">
-                                <label>Password*</label>
+                                <label>Senha</label>
                                 <input type="password" name="password" placeholder="Digite sua senha" required />
                             </span>
                             <span class="ec-login-wrap ec-login-fp">

@@ -25,7 +25,7 @@ class CreateUsersTable extends Migration
             $table->string('cpf')->unique();
             $table->string('cnpj')->unique();
             $table->string('telefone')->nullable();
-            $table->string('whatsapp');
+            $table->string('whatsapp')->nullable();
             $table->string('cep')->nullable();
             $table->text('endereco')->nullable();
             $table->string('estado')->nullable();
@@ -41,19 +41,11 @@ class CreateUsersTable extends Migration
 
             $table->boolean('programador')->default(false);
             $table->boolean('telabackend')->default(false);
-            $table->boolean('enviarxml')->default(false);
-            $table->boolean('enviarimagens')->default(false);
-            $table->boolean('popupprincipal')->default(false);
-            $table->boolean('promocoes')->default(false);
             $table->boolean('sliderprincipal')->default(false);
-            $table->boolean('userdashboard')->default(false);
-            $table->boolean('nomesdepartamentos')->default(false);
             $table->boolean('administrador')->default(false);
 
             //$table->unsignedBigInteger('user_id');
             //$table->foreign('user_id')->references('id')->on('users');
-
-
             $table->rememberToken();
             $table->timestamps();
         });

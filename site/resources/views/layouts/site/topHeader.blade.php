@@ -49,11 +49,7 @@
                 <div class="ec-header-bottons">
                     <div class="ec-header-user dropdown">
                         <button class="dropdown-toggle" data-bs-toggle="dropdown"><img src="{{asset('assets_html/images/icons/user.svg')}}" class="svg_img header_svg" alt="" /></button>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a class="dropdown-item" href="{{route('login')}}">Login</a></li>
-                            <li><a class="dropdown-item" href="{{route('register')}}">Registrar</a></li>
-                            <li><a class="dropdown-item" href="#">Checkout</a></li>
-                        </ul>
+                        @include('layouts.site.topHeader_menulogin')
                     </div>
                     <!--
                     <a href="wishlist.html" class="ec-header-btn ec-header-wishlist">
@@ -95,11 +91,7 @@
                     <div class="ec-header-bottons">
                         <div class="ec-header-user dropdown">
                             <button class="dropdown-toggle" data-bs-toggle="dropdown"><img src="{{asset('assets_html/images/icons/user.svg')}}" class="svg_img header_svg" alt="" /></button>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a class="dropdown-item" href="{{route('login')}}">Login</a></li>
-                                <li><a class="dropdown-item" href="{{route('register')}}">Registrar</a></li>
-                                <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
-                            </ul>
+                            @include('layouts.site.topHeader_menulogin')
                         </div>
                         <!--
                         <a href="wishlist.html" class="ec-header-btn ec-header-wishlist">
