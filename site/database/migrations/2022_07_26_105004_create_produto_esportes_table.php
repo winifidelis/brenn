@@ -15,6 +15,13 @@ class CreateProdutoEsportesTable extends Migration
     {
         Schema::create('produto_esportes', function (Blueprint $table) {
             $table->id();
+
+            $table->unsignedBigInteger('produto_id');
+            $table->foreign('produto_id')->references('id')->on('produtos');
+
+            $table->unsignedBigInteger('esporte_id');
+            $table->foreign('esporte_id')->references('id')->on('esportes');
+
             $table->timestamps();
         });
     }

@@ -15,6 +15,13 @@ class CreateProdutoTiposTable extends Migration
     {
         Schema::create('produto_tipos', function (Blueprint $table) {
             $table->id();
+
+            $table->unsignedBigInteger('produto_id');
+            $table->foreign('produto_id')->references('id')->on('produtos');
+
+            $table->unsignedBigInteger('tipo_id');
+            $table->foreign('tipo_id')->references('id')->on('tipos');
+
             $table->timestamps();
         });
     }

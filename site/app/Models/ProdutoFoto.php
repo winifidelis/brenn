@@ -14,6 +14,7 @@ class ProdutoFoto extends Model implements Auditable
     use \OwenIt\Auditing\Auditable;
 
     protected $fillable = [
-        'name',
+        'endereco',
+        'produto_id',
     ];
 }

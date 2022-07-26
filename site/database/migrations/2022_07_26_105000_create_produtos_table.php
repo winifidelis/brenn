@@ -29,6 +29,7 @@ class CreateProdutosTable extends Migration
             $table->double('volume')->default(0);
             $table->date('dataexclusao')->nullable();
             $table->text('foralinha')->nullable();
+            $table->double('valor');
 
             $table->softDeletes();
             $table->timestamps();

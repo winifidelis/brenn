@@ -15,6 +15,13 @@ class CreateProdutoFaixaetariasTable extends Migration
     {
         Schema::create('produto_faixaetarias', function (Blueprint $table) {
             $table->id();
+
+            $table->unsignedBigInteger('produto_id');
+            $table->foreign('produto_id')->references('id')->on('produtos');
+
+            $table->unsignedBigInteger('faixaetaria_id');
+            $table->foreign('faixaetaria_id')->references('id')->on('faixaetarias');
+
             $table->timestamps();
         });
     }

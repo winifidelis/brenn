@@ -15,6 +15,13 @@ class CreateProdutoFotosTable extends Migration
     {
         Schema::create('produto_fotos', function (Blueprint $table) {
             $table->id();
+
+            $table->text('endereco')->nullable();
+
+            $table->unsignedBigInteger('produto_id');
+            $table->foreign('produto_id')->references('id')->on('produtos');
+
+            $table->softDeletes();
             $table->timestamps();
         });
     }

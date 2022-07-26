@@ -14,6 +14,19 @@ class Produto extends Model implements Auditable
     use \OwenIt\Auditing\Auditable;
 
     protected $fillable = [
-        'name',
+        'nome',
+        'linkdescricao',
+        'descricao',
+        'unidade',
+        'embalagem',
+        'codigobarras',
+        'informacoestecnicas',
+        'dadostecnicos',
+        'pesoliq',
+        'pesobruto',
+        'volume',
+        'dataexclusao',
+        'foralinha',
+        'valor',
     ];
 }
