@@ -5,22 +5,7 @@ namespace Database\Seeders;
 use App\Models\Agenda;
 use Illuminate\Database\Seeder;
 
-use App\Models\Cliente;
-use App\Models\Clinica;
-use App\Models\Clinicauser;
-use App\Models\Lembrete;
-use App\Models\Movimentofinanceiro;
-use App\Models\Popupprincipal;
-use App\Models\Procedimento;
-use App\Models\Produto;
-use App\Models\Produtodepartamento;
-use App\Models\Produtosprocedimento;
-use App\Models\Profissional;
-use App\Models\Profissionalprocedimento;
-use App\Models\Sliderprincipal;
 use App\Models\User;
-use App\Models\Whatsappvendedores;
-use Illuminate\Support\Str;
 
 use Faker\Factory;
 

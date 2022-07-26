@@ -7,25 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use OwenIt\Auditing\Contracts\Auditable;
 
-class Produto extends Model implements Auditable
+class Unidade extends Model implements Auditable
 {
     use HasFactory;
     use SoftDeletes;
     use \OwenIt\Auditing\Auditable;
 
     protected $fillable = [
-        'nome',
-        'linkdescricao',
         'descricao',
-        'unidade',
-        'codigobarras',
-        'informacoestecnicas',
-        'dadostecnicos',
-        'pesoliq',
-        'pesobruto',
-        'volume',
-        'dataexclusao',
-        'foralinha',
-        'valor',
     ];
 }

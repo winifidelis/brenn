@@ -5,7 +5,9 @@ namespace Database\Seeders;
 use App\Models\Esporte;
 use App\Models\Faixaetaria;
 use App\Models\Genero;
+use App\Models\Tamanho;
 use App\Models\Tipo;
+use App\Models\Unidade;
 use Illuminate\Database\Seeder;
 
 class Genero_Esporte_Faixaetaria_Tipo_TableSeeder extends Seeder
@@ -22,6 +24,47 @@ class Genero_Esporte_Faixaetaria_Tipo_TableSeeder extends Seeder
         ]);
         $genero = Genero::create([
             'descricao' => 'masculino'
+        ]);
+        //----------------------------------------------------
+
+        $unidade = Unidade::create([
+            'descricao' => 'unidade'
+        ]);
+        $unidade = Unidade::create([
+            'descricao' => 'quilo'
+        ]);
+        $unidade = Unidade::create([
+            'descricao' => 'litro'
+        ]);
+        //----------------------------------------------------
+
+        $tamanho = Tamanho::create([
+            'adicionaldevalor' => 0,
+            'descricao' => 'pp'
+        ]);
+        $tamanho = Tamanho::create([
+            'adicionaldevalor' => 0,
+            'descricao' => 'p'
+        ]);
+        $tamanho = Tamanho::create([
+            'adicionaldevalor' => 0,
+            'descricao' => 'm'
+        ]);
+        $tamanho = Tamanho::create([
+            'adicionaldevalor' => 0,
+            'descricao' => 'g'
+        ]);
+        $tamanho = Tamanho::create([
+            'adicionaldevalor' => 0,
+            'descricao' => 'gg'
+        ]);
+        $tamanho = Tamanho::create([
+            'adicionaldevalor' => 0,
+            'descricao' => 'xg'
+        ]);
+        $tamanho = Tamanho::create([
+            'adicionaldevalor' => 10.0,
+            'descricao' => 'xxg'
         ]);
         //----------------------------------------------------
 
@@ -60,6 +103,7 @@ class Genero_Esporte_Faixaetaria_Tipo_TableSeeder extends Seeder
         $esporte = Esporte::create(['descricao' => mb_convert_case('Tennis e Squash', MB_CASE_LOWER, "UTF-8")]);
         $esporte = Esporte::create(['descricao' => mb_convert_case('Treino Funcional', MB_CASE_LOWER, "UTF-8")]);
         $esporte = Esporte::create(['descricao' => mb_convert_case('Vôlei', MB_CASE_LOWER, "UTF-8")]);
+        $esporte = Esporte::create(['descricao' => mb_convert_case('Futevôlei', MB_CASE_LOWER, "UTF-8")]);
         //----------------------------------------------------
 
         $faixaetaria = Faixaetaria::create([

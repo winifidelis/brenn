@@ -20,7 +20,6 @@ class CreateProdutosTable extends Migration
             $table->text('linkdescricao')->nullable();
             $table->text('descricao')->nullable();
             $table->text('unidade')->nullable();
-            $table->text('embalagem')->nullable();
             $table->text('codigobarras')->nullable();
             $table->text('informacoestecnicas')->nullable();
             $table->text('dadostecnicos')->nullable();
@@ -28,7 +27,7 @@ class CreateProdutosTable extends Migration
             $table->double('pesobruto')->default(0);
             $table->double('volume')->default(0);
             $table->date('dataexclusao')->nullable();
-            $table->text('foralinha')->nullable();
+            $table->boolean('foralinha')->default(false);
             $table->double('valor');
 
             $table->softDeletes();
