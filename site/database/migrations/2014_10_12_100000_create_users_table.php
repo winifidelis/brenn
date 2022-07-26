@@ -39,6 +39,8 @@ class CreateUsersTable extends Migration
 
             $table->timestamp('nascimento')->nullable();
 
+            $table->boolean('possuilinha')->default(false);
+
             $table->boolean('programador')->default(false);
             $table->boolean('telabackend')->default(false);
             $table->boolean('sliderprincipal')->default(false);

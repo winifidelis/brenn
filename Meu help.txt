@@ -1,0 +1,46 @@
+instalar laravel e colocar --auth
+#composer create-project --prefer-dist laravel/laravel NOME_DO_PROJETO "8.*"
+#composer require laravel/ui
+#php artisan ui bootstrap --auth //Para estilos usando bootstrap
+#php artisan ui vue --auth // Para estilos usando Vue.js
+#php artisan ui react --auth // Para estilos usando React.js
+#npm install && npm run dev // SE FALHAR, RODE UM COMANDO POR VEZ, COMO ABAIXO
+#npm install
+#npm run dev
+
+
+
+php artisan migrate:reset
+
+php artisan migrate:refresh
+
+php artisan migrate:refresh --seed
+
+php artisan db:seed
+
+php artisan db:seed --class=ObterDadosPostGresqlSeeder
+
+
+ERRO AO EXECUTAR O COMANDO ACIMA
+#composer dump-autoload
+
+php artisan make:model Tarefasinteligentestarefas -m
+
+php artisan make:seeder UsersTableSeeder
+
+php artisan make:seeder UsersTableSeeder
+
+php artisan make:controller UserController --resource
+
+modificação padrão ns arquivos SQL
+/*
+INSERT INTO [Pessoas] () VALUES (
+INSERT INTO pessoas () VALUES (1, 
+
+N'
+'
+
+')
+', '2008-08-04 00:00:00', '2009-10-01 08:09:26',NULL);
+
+*/

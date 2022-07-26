@@ -7,12 +7,15 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use App\Notifications\meuResetDeSenha;
+use OwenIt\Auditing\Contracts\Auditable;
+
 use App\Traits\FormatsNumber;
 use App\Traits\MaskNumber;
 
-class User extends Authenticatable
+class User extends Authenticatable implements Auditable
 {
     use HasFactory, Notifiable;
+    use \OwenIt\Auditing\Auditable;
     use FormatsNumber;
     use MaskNumber;
 
@@ -44,6 +47,8 @@ class User extends Authenticatable
         'checkboxregulamento',
 
         'nascimento',
+
+        'possuilinha',
 
         'programador',
         'telabackend',

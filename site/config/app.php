@@ -177,6 +177,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         AlbertCht\InvisibleReCaptcha\InvisibleReCaptchaServiceProvider::class,
 
+        OwenIt\Auditing\AuditingServiceProvider::class,
+
     ],
 
     /*
