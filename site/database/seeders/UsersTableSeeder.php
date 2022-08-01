@@ -114,9 +114,7 @@ class UsersTableSeeder extends Seeder
             'atleta7@gmail.com',
         ];
         for ($i = 0; $i < sizeof($nomes); $i++) {
-            $userlinha = UserLinha::create([
-                'descricao' => $nomes[$i],
-            ]);
+
             $user = User::create([
                 'name' => $nomes[$i],
                 'avatar' => 'default.png',
@@ -140,13 +138,21 @@ class UsersTableSeeder extends Seeder
                 'checkboxregulamento' => true,
 
                 'possuilinha' => true,
-                'userlinha_id' => $userlinha->id,
+                //'userlinha_id' => $userlinha->id,
 
                 'programador' => false,
                 'telabackend' => true,
                 'sliderprincipal' => false,
                 'administrador' => false,
             ]);
+
+            $userlinha = UserLinha::create([
+                'descricao' => $nomes[$i],
+                'user_id' => $user->id
+            ]);
+
+            $user->userlinha_id = $userlinha->id;
+            $user->update();
         }
     }
 }

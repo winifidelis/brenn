@@ -12,9 +12,11 @@ use App\Models\ProdutoFoto;
 use App\Models\ProdutoGenero;
 use App\Models\ProdutoTamanho;
 use App\Models\ProdutoTipo;
+use App\Models\ProdutoUserLinha;
 use App\Models\Tamanho;
 use App\Models\Tipo;
 use App\Models\Unidade;
+use App\Models\UserLinha;
 use Illuminate\Database\Seeder;
 
 use Symfony\Component\Console\Output\ConsoleOutput;
@@ -167,6 +169,17 @@ class ProdutosTableSeeder extends Seeder
                 $produtoFoto = ProdutoFoto::create([
                     'produto_id' => $produto->id,
                     'endereco'  => $fotos[$fo]
+                ]);
+            }
+
+            //colocar o produto a alguma linha de atleta
+            if ($faker->randomElement($array = array(true, false))) {
+                $linha = UserLinha::select('id')
+                    ->get()
+                    ->toArray();
+                $produtoUserLinha = ProdutoUserLinha::create([
+                    'produto_id' => $produto->id,
+                    'userlinha_id'  => $faker->randomElement($array = array(1, 2, 3, 4, 5, 6, 7)),
                 ]);
             }
         }

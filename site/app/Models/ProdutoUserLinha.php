@@ -4,17 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use OwenIt\Auditing\Contracts\Auditable;
 
-class UserLinha extends Model implements Auditable
+class ProdutoUserLinha extends Model implements Auditable
 {
     use HasFactory;
-    use SoftDeletes;
     use \OwenIt\Auditing\Auditable;
 
     protected $fillable = [
-        'descricao',
-        'user_id'
+        'produto_id',
+        'userlinha_id',
     ];
 }
