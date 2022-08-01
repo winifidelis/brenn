@@ -14,6 +14,6 @@ class UserLinha extends Model implements Auditable
     use \OwenIt\Auditing\Auditable;
 
     protected $fillable = [
-        'name',
+        'descricao',
     ];
 }

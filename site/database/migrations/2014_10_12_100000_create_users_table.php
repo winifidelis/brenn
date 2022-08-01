@@ -40,6 +40,7 @@ class CreateUsersTable extends Migration
             $table->timestamp('nascimento')->nullable();
 
             $table->boolean('possuilinha')->default(false);
+            $table->unsignedBigInteger('userlinha_id')->nullable();
 
             $table->boolean('programador')->default(false);
             $table->boolean('telabackend')->default(false);

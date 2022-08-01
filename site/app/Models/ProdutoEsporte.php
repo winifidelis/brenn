@@ -15,4 +15,13 @@ class ProdutoEsporte extends Model implements Auditable
         'produto_id',
         'esporte_id',
     ];
+
+    public function produto()
+    {
+        return $this->belongsTo(Produto::class);
+    }
+    public function esporte()
+    {
+        return $this->belongsTo(Esporte::class);
+    }
 }

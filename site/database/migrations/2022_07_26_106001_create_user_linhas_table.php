@@ -15,6 +15,10 @@ class CreateUserLinhasTable extends Migration
     {
         Schema::create('user_linhas', function (Blueprint $table) {
             $table->id();
+
+            $table->text('descricao')->nullable();
+
+            $table->softDeletes();
             $table->timestamps();
         });
     }

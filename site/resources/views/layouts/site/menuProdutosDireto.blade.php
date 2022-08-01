@@ -924,14 +924,17 @@ if (request()->route() != null) {
                         </div>
 
                         <div class="ec-spe-products">
+
+                            @foreach($produtosOfertasEspeciais as $oferta)
                             <div class="ec-spe-product">
                                 <div class="ec-spe-pro-inner">
                                     <div class="ec-spe-pro-image-outer col-md-6 col-sm-12">
                                         <div class="ec-spe-pro-image">
-                                            <img class="img-responsive" src="{{asset('assets_html/images/product-image/sugestao_1.jpg')}}" alt="">
+                                            <img class="img-responsive" src="{{asset('uploads/produtos/'.$oferta->produtoFoto[0]->endereco)}}" alt="">
                                         </div>
                                     </div>
                                     <div class="ec-spe-pro-content col-md-6 col-sm-12">
+                                        <!--
                                         <div class="ec-spe-pro-rating">
                                             <span class="ec-spe-rating-icon">
                                                 <i class="ecicon eci-star fill"></i>
@@ -941,15 +944,23 @@ if (request()->route() != null) {
                                                 <i class="ecicon eci-star"></i>
                                             </span>
                                         </div>
-                                        <h5 class="ec-spe-pro-title"><a href="#">Bermuda Futevôlei</a></h5>
-                                        <div class="ec-spe-pro-desc">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet consectetur Lorem ipsum dolor</div>
+                                        !-->
+                                        <h5 class="ec-spe-pro-title"><a href="#">{{$oferta->nome}}</a></h5>
+                                        <div class="ec-spe-pro-desc">{{$oferta->descricao}}</div>
+                                        @if($oferta->temdesconto)
                                         <div class="ec-spe-price">
-                                            <span class="new-price">R$ 50,00</span>
-                                            <span class="old-price">R$ 39,90</span>
+                                            <span class="new-price">R$ {{$oferta->valorcomdesconto}}</span>
+                                            <span class="old-price">R$ {{$oferta->valor}}</span>
                                         </div>
+                                        @else
+                                        <div class="ec-spe-price">
+                                            <span class="new-price">R$ {{$oferta->valor}}</span>
+                                        </div>
+                                        @endif
                                         <div class="ec-spe-pro-btn">
                                             <a href="#" class="btn btn-lg btn-primary">Adicionar ao carrinho</a>
                                         </div>
+                                        <!--
                                         <div class="ec-spe-pro-progress">
                                             <span class="ec-spe-pro-progress-desc"><span>Disponível: <b>15</b></span><span>Vendido: <b>40</b></span></span>
                                             <span class="ec-spe-pro-progressbar"></span>
@@ -958,46 +969,11 @@ if (request()->route() != null) {
                                             <span class="ec-spe-count-desc"> Corra! Oferta acabará em:</span>
                                             <span id="ec-spe-count-1"></span>
                                         </div>
+                                        !-->
                                     </div>
                                 </div>
                             </div>
-                            <div class="ec-spe-product">
-                                <div class="ec-spe-pro-inner">
-                                    <div class="ec-spe-pro-image-outer col-md-6 col-sm-12">
-                                        <div class="ec-spe-pro-image">
-                                            <img class="img-responsive" src="{{asset('assets_html/images/product-image/sugestao_2.jpg')}}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="ec-spe-pro-content col-md-6 col-sm-12">
-                                        <div class="ec-spe-pro-rating">
-                                            <span class="ec-spe-rating-icon">
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star"></i>
-                                                <i class="ecicon eci-star"></i>
-                                            </span>
-                                        </div>
-                                        <h5 class="ec-spe-pro-title"><a href="#">Blusa Futevôlei Brasil</a></h5>
-                                        <div class="ec-spe-pro-desc">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet consectetur Lorem ipsum dolor</div>
-                                        <div class="ec-spe-price">
-                                            <span class="new-price">R$ 50,00</span>
-                                            <span class="old-price">R$ 39,90</span>
-                                        </div>
-                                        <div class="ec-spe-pro-btn">
-                                            <a href="#" class="btn btn-lg btn-primary">Adicionar ao carrinho</a>
-                                        </div>
-                                        <div class="ec-spe-pro-progress">
-                                            <span class="ec-spe-pro-progress-desc"><span>Disponível: <b>15</b></span><span>Vendido: <b>40</b></span></span>
-                                            <span class="ec-spe-pro-progressbar"></span>
-                                        </div>
-                                        <div class="countdowntimer">
-                                            <span class="ec-spe-count-desc"> Corra! Oferta acabará em:</span>
-                                            <span id="ec-spe-count-1"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
 
@@ -1016,9 +992,7 @@ if (request()->route() != null) {
                     <div class="col-md-12 ec-pro-tab">
                         <ul class="ec-pro-tab-nav nav justify-content-end">
                             <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#all">Todos</a></li>
-                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#clothes">Esportes</a></li>
-                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#footwear">Atletas</a></li>
-                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#accessories">Fitness</a></li>
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#atletas">Atletas</a></li>
                         </ul>
                     </div>
 
@@ -1029,97 +1003,62 @@ if (request()->route() != null) {
 
                             <div class="tab-pane fade show active" id="all">
                                 <div class="row">
+                                    @foreach($novosProdutosTodos as $novoTodos)
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 ec-product-content">
+                                        <div class="ec-product-inner">
+                                            <div class="ec-pro-image-outer">
+                                                <div class="ec-pro-image">
+                                                    <a href="#" class="image">
+                                                        <img class="main-image" src="{{asset('uploads/produtos/'.$novoTodos->produtoFoto[0]->endereco)}}" alt="Product" />
+                                                        <img class="hover-image" src="{{asset('uploads/produtos/'.$novoTodos->produtoFoto[0]->endereco)}}" alt="Product" />
+                                                    </a>
+                                                    <div class="ec-pro-actions">
+                                                        <a class="ec-btn-group wishlist" title="Wishlist"><img src="{{asset('assets_html/images/icons/pro_wishlist.svg')}}" class="svg_img pro_svg" alt="" /></a>
+                                                        <a href="#" class="ec-btn-group quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img src="{{asset('assets_html/images/icons/quickview.svg')}}" class="svg_img pro_svg" alt="" /></a>
+                                                        <a href="#" class="ec-btn-group compare" title="Compare"><img src="{{asset('assets_html/images/icons/compare.svg')}}" class="svg_img pro_svg" alt="" /></a>
+                                                        <a href="javascript:void(0)" title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset('assets_html/images/icons/pro_cart.svg')}}" class="svg_img pro_svg" alt="" /></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ec-pro-content">
+                                                <a href="shop-left-sidebar-col-3.html">
+                                                    <h6 class="ec-pro-stitle">
+                                                        {{$novoTodos->produtoEsporte[0]->esporte->descricao}}
+                                                    </h6>
+                                                </a>
+                                                <h5 class="ec-pro-title"><a href="#">{{$novoTodos->nome}}</a></h5>
+                                                <div class="ec-pro-rat-price">
+                                                    <!--
+                                                    <span class="ec-pro-rating">
+                                                        <i class="ecicon eci-star fill"></i>
+                                                        <i class="ecicon eci-star fill"></i>
+                                                        <i class="ecicon eci-star fill"></i>
+                                                        <i class="ecicon eci-star"></i>
+                                                        <i class="ecicon eci-star"></i>
+                                                    </span>
+                                                    !-->
+                                                    @if($oferta->temdesconto)
+                                                    <span class="ec-price">
+                                                        <span class="new-price">R$ {{$oferta->valorcomdesconto}}</span>
+                                                        <span class="old-price">R$ {{$oferta->valor}}</span>
+                                                    </span>
+                                                    @else
+                                                    <span class="ec-price">
+                                                        <span class="old-price">R$ {{$oferta->valor}}</span>
+                                                    </span>
+                                                    @endif
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endforeach
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane fade" id="atletas">
+                                <div class="row">
                                     @for ($i = 0; $i != 8; $i++)
-                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 ec-product-content">
-                                        <div class="ec-product-inner">
-                                            <div class="ec-pro-image-outer">
-                                                <div class="ec-pro-image">
-                                                    <a href="#" class="image">
-                                                        <img class="main-image" src="{{asset('assets_html/images/product-image/produtos_all.jpg')}}" alt="Product" />
-                                                        <img class="hover-image" src="{{asset('assets_html/images/product-image/produtos_all.jpg')}}" alt="Product" />
-                                                    </a>
-                                                    <div class="ec-pro-actions">
-                                                        <a class="ec-btn-group wishlist" title="Wishlist"><img src="{{asset('assets_html/images/icons/pro_wishlist.svg')}}" class="svg_img pro_svg" alt="" /></a>
-                                                        <a href="#" class="ec-btn-group quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img src="{{asset('assets_html/images/icons/quickview.svg')}}" class="svg_img pro_svg" alt="" /></a>
-                                                        <a href="#" class="ec-btn-group compare" title="Compare"><img src="{{asset('assets_html/images/icons/compare.svg')}}" class="svg_img pro_svg" alt="" /></a>
-                                                        <a href="javascript:void(0)" title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset('assets_html/images/icons/pro_cart.svg')}}" class="svg_img pro_svg" alt="" /></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="ec-pro-content">
-                                                <a href="shop-left-sidebar-col-3.html">
-                                                    <h6 class="ec-pro-stitle">Esporte</h6>
-                                                </a>
-                                                <h5 class="ec-pro-title"><a href="#">Produto exemplo {{$i+1}}</a></h5>
-                                                <div class="ec-pro-rat-price">
-                                                    <span class="ec-pro-rating">
-                                                        <i class="ecicon eci-star fill"></i>
-                                                        <i class="ecicon eci-star fill"></i>
-                                                        <i class="ecicon eci-star fill"></i>
-                                                        <i class="ecicon eci-star"></i>
-                                                        <i class="ecicon eci-star"></i>
-                                                    </span>
-                                                    <span class="ec-price">
-                                                        <span class="new-price">R$ 58,00</span>
-                                                        <span class="old-price">R$ 64,00</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    @endfor
-                                </div>
-                            </div>
-
-
-                            <div class="tab-pane fade" id="clothes">
-                                <div class="row">
-                                @for ($i = 0; $i != 8; $i++)
-                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 ec-product-content">
-                                        <div class="ec-product-inner">
-                                            <div class="ec-pro-image-outer">
-                                                <div class="ec-pro-image">
-                                                    <a href="#" class="image">
-                                                        <img class="main-image" src="{{asset('assets_html/images/product-image/produtos_atletas.jpg')}}" alt="Product" />
-                                                        <img class="hover-image" src="{{asset('assets_html/images/product-image/produtos_atletas.jpg')}}" alt="Product" />
-                                                    </a>
-                                                    <div class="ec-pro-actions">
-                                                        <a class="ec-btn-group wishlist" title="Wishlist"><img src="{{asset('assets_html/images/icons/pro_wishlist.svg')}}" class="svg_img pro_svg" alt="" /></a>
-                                                        <a href="#" class="ec-btn-group quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img src="{{asset('assets_html/images/icons/quickview.svg')}}" class="svg_img pro_svg" alt="" /></a>
-                                                        <a href="#" class="ec-btn-group compare" title="Compare"><img src="{{asset('assets_html/images/icons/compare.svg')}}" class="svg_img pro_svg" alt="" /></a>
-                                                        <a href="javascript:void(0)" title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset('assets_html/images/icons/pro_cart.svg')}}" class="svg_img pro_svg" alt="" /></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="ec-pro-content">
-                                                <a href="shop-left-sidebar-col-3.html">
-                                                    <h6 class="ec-pro-stitle">Esporte</h6>
-                                                </a>
-                                                <h5 class="ec-pro-title"><a href="#">Produto exemplo {{$i+1}}</a></h5>
-                                                <div class="ec-pro-rat-price">
-                                                    <span class="ec-pro-rating">
-                                                        <i class="ecicon eci-star fill"></i>
-                                                        <i class="ecicon eci-star fill"></i>
-                                                        <i class="ecicon eci-star fill"></i>
-                                                        <i class="ecicon eci-star"></i>
-                                                        <i class="ecicon eci-star"></i>
-                                                    </span>
-                                                    <span class="ec-price">
-                                                        <span class="new-price">R$ 58,00</span>
-                                                        <span class="old-price">R$ 64,00</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    @endfor
-                                </div>
-                            </div>
-
-
-                            <div class="tab-pane fade" id="footwear">
-                                <div class="row">
-                                @for ($i = 0; $i != 8; $i++)
                                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 ec-product-content">
                                         <div class="ec-product-inner">
                                             <div class="ec-pro-image-outer">
@@ -1161,50 +1100,6 @@ if (request()->route() != null) {
                                 </div>
                             </div>
 
-
-                            <div class="tab-pane fade" id="accessories">
-                                <div class="row">
-                                @for ($i = 0; $i != 8; $i++)
-                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 ec-product-content">
-                                        <div class="ec-product-inner">
-                                            <div class="ec-pro-image-outer">
-                                                <div class="ec-pro-image">
-                                                    <a href="#" class="image">
-                                                        <img class="main-image" src="{{asset('assets_html/images/product-image/produtos_fitness.jpg')}}" alt="Product" />
-                                                        <img class="hover-image" src="{{asset('assets_html/images/product-image/produtos_fitness.jpg')}}" alt="Product" />
-                                                    </a>
-                                                    <div class="ec-pro-actions">
-                                                        <a class="ec-btn-group wishlist" title="Wishlist"><img src="{{asset('assets_html/images/icons/pro_wishlist.svg')}}" class="svg_img pro_svg" alt="" /></a>
-                                                        <a href="#" class="ec-btn-group quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img src="{{asset('assets_html/images/icons/quickview.svg')}}" class="svg_img pro_svg" alt="" /></a>
-                                                        <a href="#" class="ec-btn-group compare" title="Compare"><img src="{{asset('assets_html/images/icons/compare.svg')}}" class="svg_img pro_svg" alt="" /></a>
-                                                        <a href="javascript:void(0)" title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset('assets_html/images/icons/pro_cart.svg')}}" class="svg_img pro_svg" alt="" /></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="ec-pro-content">
-                                                <a href="shop-left-sidebar-col-3.html">
-                                                    <h6 class="ec-pro-stitle">Esporte</h6>
-                                                </a>
-                                                <h5 class="ec-pro-title"><a href="#">Produto exemplo {{$i+1}}</a></h5>
-                                                <div class="ec-pro-rat-price">
-                                                    <span class="ec-pro-rating">
-                                                        <i class="ecicon eci-star fill"></i>
-                                                        <i class="ecicon eci-star fill"></i>
-                                                        <i class="ecicon eci-star fill"></i>
-                                                        <i class="ecicon eci-star"></i>
-                                                        <i class="ecicon eci-star"></i>
-                                                    </span>
-                                                    <span class="ec-price">
-                                                        <span class="new-price">R$ 58,00</span>
-                                                        <span class="old-price">R$ 64,00</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    @endfor
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

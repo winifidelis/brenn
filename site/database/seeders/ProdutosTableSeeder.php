@@ -81,8 +81,11 @@ class ProdutosTableSeeder extends Seeder
 
         for ($i = 0; $i < 25; $i++) {
 
+            $nome = $faker->text(15);
+            $valor = $faker->randomFloat($nbMaxDecimals = 2, $min = 50.00, $max = 100.00);
             $produto = Produto::create([
-                'nome'                => $faker->text(15),
+                'nome'                => $nome,
+                'linknome'            => Produto::geraNomeLink($nome),
                 //'linkdescricao'     => vai gravar null,
                 'descricao'           => $faker->text(120),
                 'unidade'             => $faker->numberBetween(1, $totalUnidade),
@@ -94,7 +97,9 @@ class ProdutosTableSeeder extends Seeder
                 'volume'              => $faker->randomFloat($nbMaxDecimals = 2, $min = 1.00, $max = 5.00),
                 //'dataexclusao'      => vai gravar null,
                 'foralinha'           => false,
-                'valor'               => $faker->randomFloat($nbMaxDecimals = 2, $min = 50.00, $max = 100.00),
+                'valor'               => $valor,
+                'temdesconto'         => $faker->randomElement($array = array(true, false)),
+                'valorcomdesconto'    => $valor - 10,
             ]);
 
             //atribuir o produto as classes

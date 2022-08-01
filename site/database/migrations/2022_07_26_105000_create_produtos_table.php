@@ -17,6 +17,7 @@ class CreateProdutosTable extends Migration
             $table->id();
 
             $table->text('nome')->nullable();
+            $table->text('linknome')->nullable();
             $table->text('linkdescricao')->nullable();
             $table->text('descricao')->nullable();
             $table->text('unidade')->nullable();
@@ -29,6 +30,8 @@ class CreateProdutosTable extends Migration
             $table->date('dataexclusao')->nullable();
             $table->boolean('foralinha')->default(false);
             $table->double('valor');
+            $table->boolean('temdesconto')->default(false);
+            $table->double('valorcomdesconto');
 
             $table->softDeletes();
             $table->timestamps();

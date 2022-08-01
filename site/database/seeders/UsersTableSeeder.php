@@ -6,7 +6,7 @@ use App\Models\Agenda;
 use Illuminate\Database\Seeder;
 
 use App\Models\User;
-
+use App\Models\UserLinha;
 use Faker\Factory;
 
 class UsersTableSeeder extends Seeder
@@ -49,6 +49,9 @@ class UsersTableSeeder extends Seeder
             'sliderprincipal' => true,
             'administrador' => true,
         ]);
+
+
+
         $nomes = [
             'Anne Paniago',
             'Pablo Henrique',
@@ -89,6 +92,60 @@ class UsersTableSeeder extends Seeder
                 'telabackend' => true,
                 'sliderprincipal' => true,
                 'administrador' => true,
+            ]);
+        }
+
+        $nomes = [
+            'Thayrone',
+            'Alan Calixto',
+            'Thallis',
+            'Serginho',
+            'Lane',
+            'Mari',
+            'Arena todos os cantos',
+        ];
+        $emails = [
+            'atleta1@gmail.com',
+            'atleta2@gmail.com',
+            'atleta3@gmail.com',
+            'atleta4@gmail.com',
+            'atleta5@gmail.com',
+            'atleta6@gmail.com',
+            'atleta7@gmail.com',
+        ];
+        for ($i = 0; $i < sizeof($nomes); $i++) {
+            $userlinha = UserLinha::create([
+                'descricao' => $nomes[$i],
+            ]);
+            $user = User::create([
+                'name' => $nomes[$i],
+                'avatar' => 'default.png',
+                'email' => $emails[$i],
+                'password' => password_hash('123456789', PASSWORD_DEFAULT),
+
+                'tipopessoa' => 'f',
+                'cpf' => $faker->numberBetween($min = 10000000001, $max = 99999999999),
+                'cnpj' => $faker->numberBetween($min = 10000000000001, $max = 99999999999999),
+                'telefone' => '123',
+                'whatsapp' => '123',
+                'cep' => '123',
+                'endereco' => '123',
+                'estado' => '123',
+                'cidade' => '123',
+                'bairro' => '123',
+                'rua' => '123',
+                'complemento' => '123',
+                'checkboxemail' => true,
+                'checkboxwhatsapp' => true,
+                'checkboxregulamento' => true,
+
+                'possuilinha' => true,
+                'userlinha_id' => $userlinha->id,
+
+                'programador' => false,
+                'telabackend' => true,
+                'sliderprincipal' => false,
+                'administrador' => false,
             ]);
         }
     }

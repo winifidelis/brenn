@@ -49,6 +49,7 @@ class User extends Authenticatable implements Auditable
         'nascimento',
 
         'possuilinha',
+        'userlinha_id',
 
         'programador',
         'telabackend',

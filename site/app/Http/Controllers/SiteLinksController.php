@@ -15,7 +15,23 @@ class SiteLinksController extends Controller
 {
     public function inicio()
     {
-        return view('pages.site.home');
+        $produtosOfertasEspeciais = Produto::select("*")
+            ->inRandomOrder()
+            ->limit(4)
+            ->get();
+        //dd($produtosOfertasEspeciais[0]->produtoFoto[0]->endereco);
+        //dd($produtosOfertasEspeciais[0]);
+
+        $novosProdutosTodos  = Produto::select("*")
+            ->latest()
+            ->limit(12)
+            ->get();
+        //dd($novosProdutosTodos[0]->produtoEsporte[0]->esporte);
+
+        
+
+
+        return view('pages.site.home', compact('produtosOfertasEspeciais','novosProdutosTodos'));
     }
 
     public function produto()
