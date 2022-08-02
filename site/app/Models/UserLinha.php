@@ -15,6 +15,12 @@ class UserLinha extends Model implements Auditable
 
     protected $fillable = [
         'descricao',
+        'ativa',
         'user_id'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

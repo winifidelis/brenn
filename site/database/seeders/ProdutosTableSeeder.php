@@ -175,7 +175,8 @@ class ProdutosTableSeeder extends Seeder
                 ]);
             }
 
-            //colocar o produto a alguma linha de atleta
+            //colocar o produto a alguma linha de atleta, tem um sorteio de sim ou não
+            //se sim depois ele irá sortear uma linha para incluir o produto
             if ($faker->randomElement($array = array(true, false))) {
                 $linha = UserLinha::select('id')
                     ->get()

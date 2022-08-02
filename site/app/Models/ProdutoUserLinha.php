@@ -15,4 +15,13 @@ class ProdutoUserLinha extends Model implements Auditable
         'produto_id',
         'userlinha_id',
     ];
+
+    public function produto()
+    {
+        return $this->belongsTo(Produto::class);
+    }
+    public function userlinha()
+    {
+        return $this->belongsTo(userlinha::class);
+    }
 }

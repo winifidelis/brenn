@@ -1037,14 +1037,14 @@ if (request()->route() != null) {
                                                         <i class="ecicon eci-star"></i>
                                                     </span>
                                                     !-->
-                                                    @if($oferta->temdesconto)
+                                                    @if($novoTodos->temdesconto)
                                                     <span class="ec-price">
-                                                        <span class="new-price">R$ {{$oferta->valorcomdesconto}}</span>
-                                                        <span class="old-price">R$ {{$oferta->valor}}</span>
+                                                        <span class="new-price">R$ {{$novoTodos->valorcomdesconto}}</span>
+                                                        <span class="old-price">R$ {{$novoTodos->valor}}</span>
                                                     </span>
                                                     @else
                                                     <span class="ec-price">
-                                                        <span class="new-price">R$ {{$oferta->valor}}</span>
+                                                        <span class="new-price">R$ {{$novoTodos->valor}}</span>
                                                     </span>
                                                     @endif
                                                 </div>
@@ -1058,14 +1058,14 @@ if (request()->route() != null) {
 
                             <div class="tab-pane fade" id="atletas">
                                 <div class="row">
-                                    @for ($i = 0; $i != 8; $i++)
+                                    @foreach($produtosLinhas as $produtoLinha)
                                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 ec-product-content">
                                         <div class="ec-product-inner">
                                             <div class="ec-pro-image-outer">
                                                 <div class="ec-pro-image">
                                                     <a href="#" class="image">
-                                                        <img class="main-image" src="{{asset('assets_html/images/product-image/produtos_esportes.jpg')}}" alt="Product" />
-                                                        <img class="hover-image" src="{{asset('assets_html/images/product-image/produtos_esportes.jpg')}}" alt="Product" />
+                                                        <img class="main-image" src="{{asset('uploads/produtos/'.$produtoLinha->produto->produtoFoto[0]->endereco)}}" alt="Product" />
+                                                        <img class="hover-image" src="{{asset('uploads/produtos/'.$produtoLinha->produto->produtoFoto[0]->endereco)}}" alt="Product" />
                                                     </a>
                                                     <div class="ec-pro-actions">
                                                         <a class="ec-btn-group wishlist" title="Wishlist"><img src="{{asset('assets_html/images/icons/pro_wishlist.svg')}}" class="svg_img pro_svg" alt="" /></a>
@@ -1077,10 +1077,13 @@ if (request()->route() != null) {
                                             </div>
                                             <div class="ec-pro-content">
                                                 <a href="shop-left-sidebar-col-3.html">
-                                                    <h6 class="ec-pro-stitle">Esporte</h6>
+                                                    <h6 class="ec-pro-stitle">
+                                                        Linha {{$produtoLinha->userlinha->descricao}}
+                                                    </h6>
                                                 </a>
-                                                <h5 class="ec-pro-title"><a href="#">Produto exemplo {{$i+1}}</a></h5>
+                                                <h5 class="ec-pro-title"><a href="#">{{$produtoLinha->produto->nome}}</a></h5>
                                                 <div class="ec-pro-rat-price">
+                                                    <!--
                                                     <span class="ec-pro-rating">
                                                         <i class="ecicon eci-star fill"></i>
                                                         <i class="ecicon eci-star fill"></i>
@@ -1088,15 +1091,22 @@ if (request()->route() != null) {
                                                         <i class="ecicon eci-star"></i>
                                                         <i class="ecicon eci-star"></i>
                                                     </span>
+                                                    !-->
+                                                    @if($produtoLinha->produto->temdesconto)
                                                     <span class="ec-price">
-                                                        <span class="new-price">R$ 58,00</span>
-                                                        <span class="old-price">R$ 64,00</span>
+                                                        <span class="new-price">R$ {{$produtoLinha->produto->valorcomdesconto}}</span>
+                                                        <span class="old-price">R$ {{$produtoLinha->produto->valor}}</span>
                                                     </span>
+                                                    @else
+                                                    <span class="ec-price">
+                                                        <span class="new-price">R$ {{$produtoLinha->produto->valor}}</span>
+                                                    </span>
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    @endfor
+                                    @endforeach
                                 </div>
                             </div>
 

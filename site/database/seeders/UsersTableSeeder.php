@@ -148,6 +148,7 @@ class UsersTableSeeder extends Seeder
 
             $userlinha = UserLinha::create([
                 'descricao' => $nomes[$i],
+                'ativa' => true,
                 'user_id' => $user->id
             ]);
 

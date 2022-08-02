@@ -78,6 +78,10 @@ class Produto extends Model implements Auditable
     {
         return $this->hasMany(ProdutoEsporte::class);
     }
+    public function userlinha()
+    {
+        return $this->hasOne(UserLinha::class);
+    }
 
 
 

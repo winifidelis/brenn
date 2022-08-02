@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Maisvendidos;
 use App\Models\Produto;
 use App\Models\Produtodepartamento;
+use App\Models\ProdutoUserLinha;
 use App\Models\Promocoes;
 use App\Models\UserLinha;
 use Illuminate\Http\Request;
@@ -29,11 +30,25 @@ class SiteLinksController extends Controller
             ->get();
         //dd($novosProdutosTodos[0]->produtoEsporte[0]->esporte);
 
-        $linhas = UserLinha::select('user_id')->get();
-        dd($linhas);
+        $linhas = UserLinha::select('id')
+            ->where('ativa', '=', 1)
+            ->get()
+            ->toArray();
+        //Obtenhos os produtos das linhas
+        //pode ser que uma linha esteja desativada, então eu usei esse wherein
+        $produtosLinhas = ProdutoUserLinha::select('*')
+            ->whereIn('userlinha_id', $linhas)
+            ->latest()
+            ->limit(12)
+            //->orderBy('id', 'DESC')
+            ->get();
+        //dd($linhas, $produtosLinhas[0]->produto);
+        //dd($linhas, $produtosLinhas[0]->userlinha);
+        //dd($linhas, $produtosLinhas[0]->userlinha->user);
+        //dd($produtosLinhas);
 
 
-        return view('pages.site.home', compact('produtosOfertasEspeciais', 'novosProdutosTodos'));
+        return view('pages.site.home', compact('produtosOfertasEspeciais', 'novosProdutosTodos', 'produtosLinhas'));
     }
 
     public function produto()

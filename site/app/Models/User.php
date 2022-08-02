@@ -81,10 +81,22 @@ class User extends Authenticatable implements Auditable
         $this->notify(new meuResetDeSenha($token));
     }
 
+
+
+
+
     public function vendas()
     {
         return $this->hasMany(Venda::class);
     }
+    public function userlinha()
+    {
+        return $this->hasOne(UserLinha::class);
+    }
+
+
+
+
 
     public function getCpfAttribute()
     {
