@@ -6,6 +6,7 @@ use App\Models\Maisvendidos;
 use App\Models\Produto;
 use App\Models\Produtodepartamento;
 use App\Models\Promocoes;
+use App\Models\UserLinha;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
@@ -28,10 +29,11 @@ class SiteLinksController extends Controller
             ->get();
         //dd($novosProdutosTodos[0]->produtoEsporte[0]->esporte);
 
-        
+        $linhas = UserLinha::select('user_id')->get();
+        dd($linhas);
 
 
-        return view('pages.site.home', compact('produtosOfertasEspeciais','novosProdutosTodos'));
+        return view('pages.site.home', compact('produtosOfertasEspeciais', 'novosProdutosTodos'));
     }
 
     public function produto()

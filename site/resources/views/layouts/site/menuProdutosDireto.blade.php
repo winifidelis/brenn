@@ -1044,7 +1044,7 @@ if (request()->route() != null) {
                                                     </span>
                                                     @else
                                                     <span class="ec-price">
-                                                        <span class="old-price">R$ {{$oferta->valor}}</span>
+                                                        <span class="new-price">R$ {{$oferta->valor}}</span>
                                                     </span>
                                                     @endif
                                                 </div>
