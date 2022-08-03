@@ -958,7 +958,7 @@ if (request()->route() != null) {
                                             <div class="ec-pro-content">
                                                 <a href="shop-left-sidebar-col-3.html">
                                                     <h6 class="ec-pro-stitle">
-                                                        Linha {{$produtoLinha->userlinha->descricao}}
+                                                        Linha {{$produtoLinha->userlinha->nome}}
                                                     </h6>
                                                 </a>
                                                 <h5 class="ec-pro-title"><a href="#">{{$produtoLinha->produto->nome}}</a></h5>

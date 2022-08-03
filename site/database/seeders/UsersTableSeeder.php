@@ -113,6 +113,24 @@ class UsersTableSeeder extends Seeder
             'atleta6@gmail.com',
             'atleta7@gmail.com',
         ];
+        $descricao = [
+            'Descrição da linha do atleta T',
+            'Descrição da linha do atleta A',
+            'Descrição da linha do atleta Th',
+            'Descrição da linha do atleta S',
+            'Descrição da linha do atleta L',
+            'Descrição da linha do atleta M',
+            'Descrição da linha do atleta Arena',
+        ];
+        $imagemLinhas = [
+            'thaytone.jpg',
+            'alan_calixto.jpg',
+            'thallis.jpg',
+            'serginho.jpg',
+            'lane.jpg',
+            'mari.jpg',
+            'arenaTodosOsCantos.jpg',
+        ];
         for ($i = 0; $i < sizeof($nomes); $i++) {
 
             $user = User::create([
@@ -147,7 +165,9 @@ class UsersTableSeeder extends Seeder
             ]);
 
             $userlinha = UserLinha::create([
-                'descricao' => $nomes[$i],
+                'nome' => $nomes[$i],
+                'descricao' => $descricao[$i],
+                'imagem' => $imagemLinhas[$i],
                 'ativa' => true,
                 'user_id' => $user->id
             ]);
