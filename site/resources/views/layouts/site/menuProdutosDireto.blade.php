@@ -144,11 +144,15 @@ if (request()->route() != null) {
                     <div class="ec-sidebar-slider">
                         <div class="ec-sb-slider-title">Mais vendidos</div>
                         <div class="ec-sb-pro-sl">
+                            @foreach($produtosMaisVendidos as $maisVendido)
                             <div>
                                 <div class="ec-sb-pro-sl-item">
-                                    <a href="#" class="sidekka_pro_img"><img src="{{asset('assets_html/images/product-image/mais_vendidas_ex_1.jpg')}}" alt="product" /></a>
+                                    <a href="#" class="sidekka_pro_img">
+                                        <img src="{{asset('uploads/produtos/'.$maisVendido->produto->produtoFoto[0]->endereco)}}" alt="product" />
+                                    </a>
                                     <div class="ec-pro-content">
-                                        <h5 class="ec-pro-title"><a href="#">Camiseta 1</a></h5>
+                                        <h5 class="ec-pro-title"><a href="#">{{$maisVendido->produto->nome}}</a></h5>
+                                        <!--
                                         <div class="ec-pro-rating">
                                             <i class="ecicon eci-star fill"></i>
                                             <i class="ecicon eci-star fill"></i>
@@ -156,146 +160,22 @@ if (request()->route() != null) {
                                             <i class="ecicon eci-star fill"></i>
                                             <i class="ecicon eci-star fill"></i>
                                         </div>
+                                        !-->
+                                        @if($maisVendido->produto->temdesconto)
                                         <span class="ec-price">
-                                            <span class="old-price">R$ 15,00</span>
-                                            <span class="new-price">R$ 10,00</span>
+                                            <span class="old-price">R$ {{$maisVendido->produto->valor}}</span>
+                                            <span class="new-price">R$ {{$maisVendido->produto->valorcomdesconto}}</span>
                                         </span>
+                                        @else
+                                        <span class="ec-price">
+                                            <span class="new-price">R$ {{$maisVendido->produto->valor}}
+                                            </span>
+                                        </span>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <div class="ec-sb-pro-sl-item">
-                                    <a href="#" class="sidekka_pro_img"><img src="{{asset('assets_html/images/product-image/mais_vendidas_ex_2.jpg')}}" alt="product" /></a>
-                                    <div class="ec-pro-content">
-                                        <h5 class="ec-pro-title"><a href="#">Camiseta 2</a></h5>
-                                        <div class="ec-pro-rating">
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star"></i>
-                                        </div>
-                                        <span class="ec-price">
-                                            <span class="old-price">R$ 15,00</span>
-                                            <span class="new-price">R$ 10,00</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="ec-sb-pro-sl-item">
-                                    <a href="#" class="sidekka_pro_img"><img src="{{asset('assets_html/images/product-image/mais_vendidas_ex_3.jpg')}}" alt="product" /></a>
-                                    <div class="ec-pro-content">
-                                        <h5 class="ec-pro-title"><a href="#">Bermuda</a></h5>
-                                        <div class="ec-pro-rating">
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star"></i>
-                                            <i class="ecicon eci-star"></i>
-                                        </div>
-                                        <span class="ec-price">
-                                            <span class="old-price">R$ 15,00</span>
-                                            <span class="new-price">R$ 10,00</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="ec-sb-pro-sl-item">
-                                    <a href="#" class="sidekka_pro_img"><img src="{{asset('assets_html/images/product-image/mais_vendidas_ex_4.jpg')}}" alt="product" /></a>
-                                    <div class="ec-pro-content">
-                                        <h5 class="ec-pro-title"><a href="#">Camiseta 3</a></h5>
-                                        <div class="ec-pro-rating">
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star fill"></i>
-                                        </div>
-                                        <span class="ec-price">
-                                            <span class="old-price">R$ 15,00</span>
-                                            <span class="new-price">R$ 10,00</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="ec-sb-pro-sl-item">
-                                    <a href="#" class="sidekka_pro_img"><img src="{{asset('assets_html/images/product-image/mais_vendidas_ex_5.jpg')}}" alt="product" /></a>
-                                    <div class="ec-pro-content">
-                                        <h5 class="ec-pro-title"><a href="#">Blusa</a></h5>
-                                        <div class="ec-pro-rating">
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star"></i>
-                                        </div>
-                                        <span class="ec-price">
-                                            <span class="old-price">R$ 15,00</span>
-                                            <span class="new-price">R$ 10,00</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="ec-sb-pro-sl-item">
-                                    <a href="#" class="sidekka_pro_img"><img src="{{asset('assets_html/images/product-image/mais_vendidas_ex_6.jpg')}}" alt="product" /></a>
-                                    <div class="ec-pro-content">
-                                        <h5 class="ec-pro-title"><a href="#">Camiseta preto e branco</a></h5>
-                                        <div class="ec-pro-rating">
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star"></i>
-                                            <i class="ecicon eci-star"></i>
-                                            <i class="ecicon eci-star"></i>
-                                        </div>
-                                        <span class="ec-price">
-                                            <span class="old-price">R$ 15,00</span>
-                                            <span class="new-price">R$ 10,00</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="ec-sb-pro-sl-item">
-                                    <a href="#" class="sidekka_pro_img"><img src="{{asset('assets_html/images/product-image/mais_vendidas_ex_7.jpg')}}" alt="product" /></a>
-                                    <div class="ec-pro-content">
-                                        <h5 class="ec-pro-title"><a href="#">Saia</a></h5>
-                                        <div class="ec-pro-rating">
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star fill"></i>
-                                        </div>
-                                        <span class="ec-price">
-                                            <span class="old-price">R$ 15,00</span>
-                                            <span class="new-price">R$ 10,00</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="ec-sb-pro-sl-item">
-                                    <a href="#" class="sidekka_pro_img"><img src="{{asset('assets_html/images/product-image/mais_vendidas_ex_8.jpg')}}" alt="product" /></a>
-                                    <div class="ec-pro-content">
-                                        <h5 class="ec-pro-title"><a href="#">Regata</a></h5>
-                                        <div class="ec-pro-rating">
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star fill"></i>
-                                            <i class="ecicon eci-star"></i>
-                                            <i class="ecicon eci-star"></i>
-                                        </div>
-                                        <span class="ec-price">
-                                            <span class="old-price">R$ 15,00</span>
-                                            <span class="new-price">R$ 10,00</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>

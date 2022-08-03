@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Log;
-use App\Models\Popupprincipal;
+use App\Models\PopupPrincipal;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
@@ -75,7 +75,7 @@ class PopupPrincipalController extends Controller
     {
         //
         $data = $request->all();
-        $popup = Popupprincipal::find($id);
+        $popup = PopupPrincipal::find($id);
 
         try {
             if ($request->hasfile('imagem')) {

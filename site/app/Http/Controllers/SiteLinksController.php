@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ComentariosHome;
 use App\Models\Maisvendidos;
+use App\Models\PopupPrincipal;
 use App\Models\Produto;
 use App\Models\Produtodepartamento;
+use App\Models\ProdutoMaisVendido;
 use App\Models\ProdutoUserLinha;
 use App\Models\Promocoes;
 use App\Models\UserLinha;
@@ -47,8 +50,32 @@ class SiteLinksController extends Controller
         //dd($linhas, $produtosLinhas[0]->userlinha->user);
         //dd($produtosLinhas);
 
+        $produtosMaisVendidos = ProdutoMaisVendido::select('*')
+            ->inRandomOrder()
+            ->limit(8)
+            ->get();
+        //dd($produtosMaisVendidos);
 
-        return view('pages.site.home', compact('produtosOfertasEspeciais', 'novosProdutosTodos', 'produtosLinhas'));
+        $popupPrincipal = PopupPrincipal::latest()
+            ->first();
+
+        $comentarios = ComentariosHome::select('*')
+            ->inRandomOrder()
+            ->limit(3)
+            ->get();
+        //dd($produtosMaisVendidos);
+
+        return view(
+            'pages.site.home',
+            compact(
+                'produtosOfertasEspeciais',
+                'novosProdutosTodos',
+                'produtosLinhas',
+                'popupPrincipal',
+                'produtosMaisVendidos',
+                'comentarios'
+            )
+        );
     }
 
     public function produto()

@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\PopupPrincipal;
 use Illuminate\Database\Seeder;
 
 use Symfony\Component\Console\Output\ConsoleOutput;
@@ -21,6 +22,8 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             UsersTableSeeder::class,
+            PopupPrincipalTableSeeder::class,
+            ComentariosTableSeeder::class,
             Genero_Esporte_Faixaetaria_Tipo_TableSeeder::class,
             ProdutosTableSeeder::class,
             //ClientesTableSeeder::class,

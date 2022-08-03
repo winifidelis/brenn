@@ -10,6 +10,7 @@ use App\Models\ProdutoEsporte;
 use App\Models\ProdutoFaixaetaria;
 use App\Models\ProdutoFoto;
 use App\Models\ProdutoGenero;
+use App\Models\ProdutoMaisVendido;
 use App\Models\ProdutoTamanho;
 use App\Models\ProdutoTipo;
 use App\Models\ProdutoUserLinha;
@@ -184,6 +185,13 @@ class ProdutosTableSeeder extends Seeder
                 $produtoUserLinha = ProdutoUserLinha::create([
                     'produto_id' => $produto->id,
                     'userlinha_id'  => $faker->randomElement($array = array(1, 2, 3, 4, 5, 6, 7)),
+                ]);
+            }
+
+            //Adicionar ou não esse produto na tabela de mais vendidos
+            if ($faker->randomElement($array = array(true, false))) {
+                $produtoMaisVendido = ProdutoMaisVendido::create([
+                    'produto_id' => $produto->id,
                 ]);
             }
         }

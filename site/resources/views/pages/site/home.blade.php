@@ -186,54 +186,24 @@
                 </div>
                 <div class="ec-test-outer">
                     <ul id="ec-testimonial-slider">
+                        @foreach($comentarios as $comentario)
                         <li class="ec-test-item">
                             <div class="ec-test-inner">
                                 <div class="ec-test-img">
-                                    <img alt="testimonial" title="testimonial" src="{{asset('assets_html/images/testimonial/1.jpg')}}" />
+                                    <img alt="testimonial" title="testimonial" src="{{asset('uploads/comentarios/'.$comentario->imagem)}}" />
                                 </div>
                                 <div class="ec-test-content">
-                                    <div class="ec-test-name">João exemplo 1</div>
-                                    <div class="ec-test-designation">Organizados de eventos</div>
+                                    <div class="ec-test-name">{{$comentario->nome}}</div>
+                                    <div class="ec-test-designation">{{$comentario->titulo}}</div>
                                     <div class="ec-test-divider">
                                         <img src="{{asset('assets_html/images/testimonial/quotes.svg')}}" class="svg_img test_svg" alt="" />
                                     </div>
-                                    <div class="ec-test-desc">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet.
+                                    <div class="ec-test-desc">{{$comentario->texto}}
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="ec-test-item">
-                            <div class="ec-test-inner">
-                                <div class="ec-test-img">
-                                    <img alt="testimonial" title="testimonial" src="{{asset('assets_html/images/testimonial/2.jpg')}}" />
-                                </div>
-                                <div class="ec-test-content">
-                                    <div class="ec-test-name">João exemplo 2</div>
-                                    <div class="ec-test-designation">Proprietário Arena X</div>
-                                    <div class="ec-test-divider">
-                                        <img src="{{asset('assets_html/images/testimonial/quotes.svg')}}" class="svg_img test_svg" alt="" />
-                                    </div>
-                                    <div class="ec-test-desc">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet.
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="ec-test-item">
-                            <div class="ec-test-inner">
-                                <div class="ec-test-img">
-                                    <img alt="testimonial" title="testimonial" src="{{asset('assets_html/images/testimonial/3.jpg')}}" />
-                                </div>
-                                <div class="ec-test-content">
-                                    <div class="ec-test-name">João exemplo 3</div>
-                                    <div class="ec-test-designation">Fundador de campeonatos</div>
-                                    <div class="ec-test-divider">
-                                        <img src="{{asset('assets_html/images/testimonial/quotes.svg')}}" class="svg_img test_svg" alt="" />
-                                    </div>
-                                    <div class="ec-test-desc">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet.
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        @endforeach
                     </ul>
                 </div>
             </div>

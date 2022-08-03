@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUserLinhasTable extends Migration
+class CreateComentariosHomesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,13 @@ class CreateUserLinhasTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_linhas', function (Blueprint $table) {
+        Schema::create('comentarios_homes', function (Blueprint $table) {
             $table->id();
 
             $table->text('nome')->nullable();
-            $table->text('descricao')->nullable();
+            $table->text('titulo')->nullable();
+            $table->text('texto')->nullable();
             $table->text('imagem')->nullable();
-            $table->boolean('ativa')->default(false);
-
-            $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users');
 
             $table->softDeletes();
             $table->timestamps();
@@ -36,6 +33,6 @@ class CreateUserLinhasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_linhas');
+        Schema::dropIfExists('comentarios_homes');
     }
 }

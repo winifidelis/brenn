@@ -37,7 +37,7 @@
     carregador do site
     !-->
     <div id="ec-overlay"><span class="loader_img"></span></div>
-    
+
     <header class="ec-header">
 
         @include('layouts.site.topHeader')
@@ -155,7 +155,7 @@
     </div>
 
 
-    <!-- Newsletter Modal Start -->
+    @if($popupPrincipal->ativo)
     <div id="ec-popnews-bg"></div>
     <div id="ec-popnews-box">
         <div id="ec-popnews-close"><i class="ecicon eci-close"></i></div>
@@ -165,9 +165,9 @@
             </div>
             <div class="col-md-5">
                 <div id="ec-popnews-box-content">
-                    <h2>Pop-up que pode ser escondido.</h2>
-                    <p>Este pop-up terá uma configuração para aparecer somente quando quiserem. </p>
-                    <p>Mais de um tipo de pop-up poderá ser configurado. </p>
+                    <h2>{{$popupPrincipal->titulo}}</h2>
+                    <p>{{$popupPrincipal->texto1}}</p>
+                    <p>{{$popupPrincipal->texto2}}</p>
                     <!--
                     <form id="ec-popnews-form" action="#" method="post">
                         <input type="email" name="newsemail" placeholder="Email Address" required />
@@ -178,7 +178,7 @@
             </div>
         </div>
     </div>
-    <!-- Newsletter Modal end -->
+    @endif
 
     @include('layouts.site.menuBarFooterHome')
 
@@ -236,7 +236,7 @@
     <script src="{{asset('assets_html/js/brenn.js')}}"></script>
 
     <script src="{{asset('assets_html/util.js')}}"></script>
-    
+
 </body>
 
 </html>
